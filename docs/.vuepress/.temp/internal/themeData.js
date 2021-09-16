@@ -1,8 +1,9 @@
 export const themeData = {
   "logo": "/logo.png",
+  "contributors": false,
+  "lastUpdated": false,
   "sidebar": {
     "collapsable": false,
-    "contributors": false,
     "/": [
       "/",
       "/preparation",
@@ -37,9 +38,7 @@ export const themeData = {
   "sidebarDepth": 2,
   "editLink": true,
   "editLinkText": "Edit this page",
-  "lastUpdated": true,
   "lastUpdatedText": "Last Updated",
-  "contributors": true,
   "contributorsText": "Contributors",
   "notFound": [
     "There's nothing here.",

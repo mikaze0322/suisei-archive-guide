@@ -51,17 +51,7 @@ export const data = {
       ]
     }
   ],
-  "filePathRelative": "preparation/README.md",
-  "git": {
-    "updatedTime": 1631773879000,
-    "contributors": [
-      {
-        "name": "aozaki-kuro",
-        "email": "aozaki.kuro@gmail.om",
-        "commits": 1
-      }
-    ]
-  }
+  "filePathRelative": "preparation/README.md"
 }
 
 if (import.meta.webpackHot) {

@@ -38,17 +38,7 @@ export const data = {
       "children": []
     }
   ],
-  "filePathRelative": "download/kkr/README.md",
-  "git": {
-    "updatedTime": 1631773879000,
-    "contributors": [
-      {
-        "name": "aozaki-kuro",
-        "email": "aozaki.kuro@gmail.om",
-        "commits": 1
-      }
-    ]
-  }
+  "filePathRelative": "download/kkr/README.md"
 }
 
 if (import.meta.webpackHot) {

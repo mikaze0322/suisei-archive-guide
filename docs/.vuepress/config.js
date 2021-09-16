@@ -16,6 +16,14 @@ module.exports = {
   markdown: {
     lineNumbers: false // 代码块显示行号
   },
+  plugins: [
+    [
+      '@vuepress/plugin-google-analytics',
+      {
+        id: 'G-3F72EW40RP',
+      },
+    ],
+  ],
   themeConfig: {
     logo: '/logo.png',
     //nav:[ // 导航栏配置

@@ -6,17 +6,7 @@ export const data = {
   "frontmatter": {},
   "excerpt": "",
   "headers": [],
-  "filePathRelative": "download/README.md",
-  "git": {
-    "updatedTime": 1631773879000,
-    "contributors": [
-      {
-        "name": "aozaki-kuro",
-        "email": "aozaki.kuro@gmail.om",
-        "commits": 1
-      }
-    ]
-  }
+  "filePathRelative": "download/README.md"
 }
 
 if (import.meta.webpackHot) {

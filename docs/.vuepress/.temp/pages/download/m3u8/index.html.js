@@ -37,17 +37,7 @@ export const data = {
       "children": []
     }
   ],
-  "filePathRelative": "download/m3u8/README.md",
-  "git": {
-    "updatedTime": 1631774580000,
-    "contributors": [
-      {
-        "name": "aozaki-kuro",
-        "email": "aozaki.kuro@gmail.om",
-        "commits": 2
-      }
-    ]
-  }
+  "filePathRelative": "download/m3u8/README.md"
 }
 
 if (import.meta.webpackHot) {

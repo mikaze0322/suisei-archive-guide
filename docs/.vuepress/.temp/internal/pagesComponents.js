@@ -3,10 +3,10 @@ import { defineAsyncComponent } from 'vue'
 export const pagesComponents = {
   // path: /
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/aozaki/Documents/github/suisei-archive-guide/docs/.vuepress/.temp/pages/index.html.vue")),
-  // path: /preparation/
-  "v-b5a41c1e": defineAsyncComponent(() => import(/* webpackChunkName: "v-b5a41c1e" */"/Users/aozaki/Documents/github/suisei-archive-guide/docs/.vuepress/.temp/pages/preparation/index.html.vue")),
   // path: /download/
   "v-4cb29dce": defineAsyncComponent(() => import(/* webpackChunkName: "v-4cb29dce" */"/Users/aozaki/Documents/github/suisei-archive-guide/docs/.vuepress/.temp/pages/download/index.html.vue")),
+  // path: /preparation/
+  "v-b5a41c1e": defineAsyncComponent(() => import(/* webpackChunkName: "v-b5a41c1e" */"/Users/aozaki/Documents/github/suisei-archive-guide/docs/.vuepress/.temp/pages/preparation/index.html.vue")),
   // path: /storage/
   "v-3d00f70d": defineAsyncComponent(() => import(/* webpackChunkName: "v-3d00f70d" */"/Users/aozaki/Documents/github/suisei-archive-guide/docs/.vuepress/.temp/pages/storage/index.html.vue")),
   // path: /download/kkr/

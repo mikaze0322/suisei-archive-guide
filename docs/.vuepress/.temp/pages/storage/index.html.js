@@ -38,17 +38,7 @@ export const data = {
       ]
     }
   ],
-  "filePathRelative": "storage/README.md",
-  "git": {
-    "updatedTime": 1631773879000,
-    "contributors": [
-      {
-        "name": "aozaki-kuro",
-        "email": "aozaki.kuro@gmail.om",
-        "commits": 1
-      }
-    ]
-  }
+  "filePathRelative": "storage/README.md"
 }
 
 if (import.meta.webpackHot) {

@@ -57,17 +57,7 @@ export const data = {
       "children": []
     }
   ],
-  "filePathRelative": "download/radigo/README.md",
-  "git": {
-    "updatedTime": 1631773879000,
-    "contributors": [
-      {
-        "name": "aozaki-kuro",
-        "email": "aozaki.kuro@gmail.om",
-        "commits": 1
-      }
-    ]
-  }
+  "filePathRelative": "download/radigo/README.md"
 }
 
 if (import.meta.webpackHot) {

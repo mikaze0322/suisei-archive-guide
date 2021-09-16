@@ -5,17 +5,13 @@ module.exports = {
   head: [
     ['meta', { name: 'twitter:card', content: 'https://guide.suisei.cc/logo.png' }],
     ['meta', { name: 'twitter:site', content: 'Suisei Archive Guide | Treasure every moment' }],
+    ['meta', { name: 'twitter:image', content: 'https://guide.suisei.cc/logo.png' }],
+    ['meta', { name: 'twitter:description', content: 'This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.' }],
     ['meta', { property: 'og:type', content: 'article' }],
-    ['meta', { property: 'og:title', content: 'Suisei Archive Guide' }],
+    ['meta', { property: 'og:title', content: 'Suisei Archive Guide | Treasure every moment' }],
     ['meta', { property: 'og:site_name', content: 'Suisei Archive Guide' }],
-    ['meta', { property: 'og:url', content: 'https://guide.suisei.cc' }],
-    [
-      'meta',
-      {
-        property: 'og:image',
-        content: 'https://guide.suisei.cc/logo.jpg',
-      },
-    ],
+    ['meta', { property: 'og:url', content: 'https://guide.suisei.cc/' }],
+    ['meta', { property: 'og:image', content: 'https://guide.suisei.cc/logo.jpg' }],
   ],
   markdown: {
     lineNumbers: false // 代码块显示行号

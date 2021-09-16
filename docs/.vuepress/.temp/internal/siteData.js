@@ -21,6 +21,20 @@ export const siteData = {
     [
       "meta",
       {
+        "name": "twitter:image",
+        "content": "https://guide.suisei.cc/logo.png"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "twitter:description",
+        "content": "This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei."
+      }
+    ],
+    [
+      "meta",
+      {
         "property": "og:type",
         "content": "article"
       }
@@ -29,7 +43,7 @@ export const siteData = {
       "meta",
       {
         "property": "og:title",
-        "content": "Suisei Archive Guide"
+        "content": "Suisei Archive Guide | Treasure every moment"
       }
     ],
     [
@@ -43,7 +57,7 @@ export const siteData = {
       "meta",
       {
         "property": "og:url",
-        "content": "https://guide.suisei.cc"
+        "content": "https://guide.suisei.cc/"
       }
     ],
     [

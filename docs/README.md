@@ -12,14 +12,19 @@ IF YOU HAVE ANY PROBLEMS, READ THE `README.MD` IN EVERY REPO FIRST.
 
 ## Changelog
 
-2021/09/14
+2021/09/15
 
-- Re-written and delopyed to Vercel
+- Revised and reconstructed with VuePress
 
 ::: details Earlier Changelogs
+
+2021/09/14
+- Re-written and delopyed to Vercel
+
 2021/08/18
 - Added `Minyami` for niconico timeshift download
 - Changed the style some badges
+
 :::
 
 ## Disclaimer
@@ -33,3 +38,11 @@ IF YOU HAVE ANY PROBLEMS, READ THE `README.MD` IN EVERY REPO FIRST.
 7. If you need materials to make a clip or introduction of Suisei, please be sure it's positive and won't damage her reputation.
 8. This Guide does not support uploading content available only behind pay-walls. This includes Member-only videos, Paid Lives, Songs, Albums, etc.
 9. The Guide does not and will not deal with issues caused by unexpected content distribution by other parties.
+
+## Credit
+
+Site created using [VuePress](https://vuepress.vuejs.org/)
+
+Deployed on [Vercel](http://vercel.com/)
+
+Search (is going to be) provided by [DocSearch](https://docsearch.algolia.com/)

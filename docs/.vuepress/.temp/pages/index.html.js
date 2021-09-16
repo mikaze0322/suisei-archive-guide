@@ -29,6 +29,12 @@ export const data = {
       "title": "Disclaimer",
       "slug": "disclaimer",
       "children": []
+    },
+    {
+      "level": 2,
+      "title": "Credit",
+      "slug": "credit",
+      "children": []
     }
   ],
   "filePathRelative": "README.md"

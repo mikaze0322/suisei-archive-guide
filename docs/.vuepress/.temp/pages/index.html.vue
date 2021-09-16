@@ -5,11 +5,15 @@
 <h2 id="important" tabindex="-1"><a class="header-anchor" href="#important" aria-hidden="true">#</a> IMPORTANT</h2>
 <p>IF YOU HAVE ANY PROBLEMS, READ THE <code>README.MD</code> IN EVERY REPO FIRST.</p>
 <h2 id="changelog" tabindex="-1"><a class="header-anchor" href="#changelog" aria-hidden="true">#</a> Changelog</h2>
+<p>2021/09/15</p>
+<ul>
+<li>Revised and reconstructed with VuePress</li>
+</ul>
+<details class="custom-container details"><summary>Earlier Changelogs</summary>
 <p>2021/09/14</p>
 <ul>
 <li>Re-written and delopyed to Vercel</li>
 </ul>
-<details class="custom-container details"><summary>Earlier Changelogs</summary>
 <p>2021/08/18</p>
 <ul>
 <li>Added <code>Minyami</code> for niconico timeshift download</li>
@@ -28,4 +32,8 @@
 <li>This Guide does not support uploading content available only behind pay-walls. This includes Member-only videos, Paid Lives, Songs, Albums, etc.</li>
 <li>The Guide does not and will not deal with issues caused by unexpected content distribution by other parties.</li>
 </ol>
+<h2 id="credit" tabindex="-1"><a class="header-anchor" href="#credit" aria-hidden="true">#</a> Credit</h2>
+<p>Site created using <a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer">VuePress<OutboundLink/></a></p>
+<p>Deployed on <a href="http://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel<OutboundLink/></a></p>
+<p>Search (is going to be) provided by <a href="https://docsearch.algolia.com/" target="_blank" rel="noopener noreferrer">DocSearch<OutboundLink/></a></p>
 </template>

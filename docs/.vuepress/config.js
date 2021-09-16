@@ -32,6 +32,18 @@ module.exports = {
         skipWaiting: true,
       },
     ],
+    //[
+    //  '@vuepress/docsearch',
+    //  {
+    //    apiKey: '<API_KEY>',
+    //   indexName: '<INDEX_NAME>',
+    //    locales: {
+    //      '/': {
+    //        placeholder: 'Search Documentation',
+    //      },
+    //    },
+    //  },
+    //],
   ],
   themeConfig: {
     logo: '/android-chrome-192x192.png',

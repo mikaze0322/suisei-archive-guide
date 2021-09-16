@@ -3,6 +3,7 @@ module.exports = {
   title: "Suisei Archive Guide",
   description: "This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.",
   head: [
+    ['link', { rel: 'icon', href: '/logo.png' }],
     ['meta', { name: 'twitter:card', content: 'https://guide.suisei.cc/logo.png' }],
     ['meta', { name: 'twitter:site', content: 'Suisei Archive Guide | Treasure every moment' }],
     ['meta', { name: 'twitter:image', content: 'https://guide.suisei.cc/logo.png' }],
@@ -34,7 +35,6 @@ module.exports = {
     contributors: false,
     lastUpdated: false,
     sidebar: {
-      collapsable: false,
       "/": [
         "/",
         "/preparation",
@@ -44,7 +44,6 @@ module.exports = {
       "/download/": [
         {
           text: "Download",
-          collapsable: false,
           children: [
             "/download/youtube/",
             "/download/minyami/",

@@ -2,6 +2,7 @@ export const themeData = {
   "logo": "/logo.png",
   "sidebar": {
     "collapsable": false,
+    "contributors": false,
     "/": [
       "/",
       "/preparation",
@@ -11,6 +12,7 @@ export const themeData = {
     "/download/": [
       {
         "text": "Download",
+        "collapsable": false,
         "children": [
           "/download/youtube/",
           "/download/minyami/",

@@ -9,14 +9,12 @@
 <ul>
 <li>Re-written and delopyed to Vercel</li>
 </ul>
-<details>
-  <summary>Earlier Changelogs</summary>
-  <br>
-  2021/08/18
-  <br>
-  - Added `Minyami` for niconico timeshift download
-  <br>
-  - Changed the style some badges
+<details class="custom-container details"><summary>Earlier Changelogs</summary>
+<p>2021/08/18</p>
+<ul>
+<li>Added <code>Minyami</code> for niconico timeshift download</li>
+<li>Changed the style some badges</li>
+</ul>
 </details>
 <h2 id="disclaimer" tabindex="-1"><a class="header-anchor" href="#disclaimer" aria-hidden="true">#</a> Disclaimer</h2>
 <ol>

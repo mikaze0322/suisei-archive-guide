@@ -39,12 +39,12 @@ export const data = {
   ],
   "filePathRelative": "download/m3u8/README.md",
   "git": {
-    "updatedTime": 1631773879000,
+    "updatedTime": 1631774580000,
     "contributors": [
       {
         "name": "aozaki-kuro",
         "email": "aozaki.kuro@gmail.om",
-        "commits": 1
+        "commits": 2
       }
     ]
   }

@@ -2,7 +2,21 @@ module.exports = {
   lang: "en-US",
   title: "Suisei Archive Guide",
   description: "This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.",
-  head: [['link', { rel: 'icon', href: '/logo.png' }]],
+  head: [
+    ['meta', { name: 'twitter:card', content: 'https://guide.suisei.cc/logo.png' }],
+    ['meta', { name: 'twitter:site', content: 'Suisei Archive Guide | Treasure every moment' }],
+    ['meta', { property: 'og:type', content: 'article' }],
+    ['meta', { property: 'og:title', content: 'Suisei Archive Guide' }],
+    ['meta', { property: 'og:site_name', content: 'Suisei Archive Guide' }],
+    ['meta', { property: 'og:url', content: 'https://guide.suisei.cc' }],
+    [
+      'meta',
+      {
+        property: 'og:image',
+        content: 'https://guide.suisei.cc/logo.jpg',
+      },
+    ],
+  ],
   markdown: {
     lineNumbers: false // 代码块显示行号
   },
@@ -15,23 +29,27 @@ module.exports = {
     //],
     sidebar: {
       collapsable: false,
+      contributors: false,
       "/": [
         "/",
         "/preparation",
         "/download/",
         "/storage",
       ],
-      "/download/": [{
-        text: "Download",
-        children: [
-          "/download/youtube/",
-          "/download/minyami/",
-          "/download/kkr/",
-          "/download/radigo/",
-          "/download/rget/",
-          "/download/m3u8/",
-        ],
-      }],
+      "/download/": [
+        {
+          text: "Download",
+          collapsable: false,
+          children: [
+            "/download/youtube/",
+            "/download/minyami/",
+            "/download/kkr/",
+            "/download/radigo/",
+            "/download/rget/",
+            "/download/m3u8/",
+          ],
+        }
+      ],
     },
   }
 }

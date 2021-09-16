@@ -5,8 +5,6 @@ export const pagesData = {
   "v-b5a41c1e": () => import(/* webpackChunkName: "v-b5a41c1e" */"/home/ubuntu/github/suisei-archive-guide/docs/.vuepress/.temp/pages/preparation/index.html.js").then(({ data }) => data),
   // path: /storage/
   "v-3d00f70d": () => import(/* webpackChunkName: "v-3d00f70d" */"/home/ubuntu/github/suisei-archive-guide/docs/.vuepress/.temp/pages/storage/index.html.js").then(({ data }) => data),
-  // path: /tools/
-  "v-d440f426": () => import(/* webpackChunkName: "v-d440f426" */"/home/ubuntu/github/suisei-archive-guide/docs/.vuepress/.temp/pages/tools/index.html.js").then(({ data }) => data),
   // path: /tools/kkr/
   "v-2459ea6c": () => import(/* webpackChunkName: "v-2459ea6c" */"/home/ubuntu/github/suisei-archive-guide/docs/.vuepress/.temp/pages/tools/kkr/index.html.js").then(({ data }) => data),
   // path: /tools/m3u8/

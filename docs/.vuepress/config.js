@@ -75,7 +75,7 @@ module.exports = {
       "/": [""],
       "/tools/": [
         {
-          text: "Download",
+          text: "Tools",
           children: [
             "/tools/youtube/",
             "/tools/minyami/",

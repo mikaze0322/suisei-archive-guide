@@ -4,7 +4,6 @@ const routeItems = [
   ["v-8daa1a0e","/","Introduction",["/index.html","/README.md"]],
   ["v-b5a41c1e","/preparation/","Preparation",["/preparation/index.html","/preparation/README.md"]],
   ["v-3d00f70d","/storage/","Storage",["/storage/index.html","/storage/README.md"]],
-  ["v-d440f426","/tools/","Download",["/tools/index.html","/tools/README.md"]],
   ["v-2459ea6c","/tools/kkr/","kkr",["/tools/kkr/index.html","/tools/kkr/README.md"]],
   ["v-66ddd58e","/tools/m3u8/","General .m3u8 stream",["/tools/m3u8/index.html","/tools/m3u8/README.md"]],
   ["v-7080c034","/tools/minyami/","minyami",["/tools/minyami/index.html","/tools/minyami/README.md"]],

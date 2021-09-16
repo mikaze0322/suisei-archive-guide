@@ -23,9 +23,10 @@ module.exports = {
     //  {text: '算法题库', link: '/algorithm/'},
     //  {text: '微博', link: 'https://baidu.com'}      
     //],
+    contributors: false,
+    lastUpdated: false,
     sidebar: {
       collapsable: false,
-      contributors: false,
       "/": [
         "/",
         "/preparation",

@@ -35,7 +35,7 @@ radigo rec -a="area ID" -id="program ID" -s="timestamp"
 
 `area ID` can be found by copying the links in the footer.
 
-![footer](radigo-0001.jpg ':size=800rem')
+![footer](./radigo-0001.jpg)
 
 You will get a link like this and `JP13` is the `area ID`
 

@@ -5,6 +5,13 @@ export const siteData = {
   "description": "This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.",
   "head": [
     [
+      "link",
+      {
+        "rel": "icon",
+        "href": "/logo.png"
+      }
+    ],
+    [
       "meta",
       {
         "name": "twitter:card",

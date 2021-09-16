@@ -27,33 +27,47 @@ module.exports = {
   ],
   themeConfig: {
     logo: '/logo.png',
-    //nav:[ // 导航栏配置
-    //  {text: '前端基础', link: '/accumulate/' },
-    //  {text: '算法题库', link: '/algorithm/'},
-    //  {text: '微博', link: 'https://baidu.com'}      
-    //],
     contributors: false,
     lastUpdated: false,
+    navbar: [
+      {
+        text: "Preparation",
+        link: "/preparation/",
+      },
+      {
+        text: "Tools",
+        link: "/tools/",
+        children: [
+          "/tools/youtube/",
+          "/tools/minyami/",
+          "/tools/kkr/",
+          "/tools/radigo/",
+          "/tools/rget/",
+          "/tools/m3u8/",
+        ],
+      },
+      {
+        text: "Storage",
+        link: "/storage/",
+      },
+    ],
     sidebar: {
-      "/": [
-        "/",
-        "/preparation",
-        "/download/",
-        "/storage",
-      ],
-      "/download/": [
+      "/": [""],
+      "/tools/": [
         {
           text: "Download",
           children: [
-            "/download/youtube/",
-            "/download/minyami/",
-            "/download/kkr/",
-            "/download/radigo/",
-            "/download/rget/",
-            "/download/m3u8/",
+            "/tools/youtube/",
+            "/tools/minyami/",
+            "/tools/kkr/",
+            "/tools/radigo/",
+            "/tools/rget/",
+            "/tools/m3u8/",
           ],
         }
       ],
+      "/preparation/": ["/preparation/"],
+      "/storage/": ["/storage/"],
     },
   }
 }

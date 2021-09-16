@@ -2,27 +2,50 @@ export const themeData = {
   "logo": "/logo.png",
   "contributors": false,
   "lastUpdated": false,
+  "navbar": [
+    {
+      "text": "Preparation",
+      "link": "/preparation/"
+    },
+    {
+      "text": "Tools",
+      "link": "/tools/",
+      "children": [
+        "/tools/youtube/",
+        "/tools/minyami/",
+        "/tools/kkr/",
+        "/tools/radigo/",
+        "/tools/rget/",
+        "/tools/m3u8/"
+      ]
+    },
+    {
+      "text": "Storage",
+      "link": "/storage/"
+    }
+  ],
   "sidebar": {
-    "collapsable": false,
     "/": [
-      "/",
-      "/preparation",
-      "/download/",
-      "/storage"
+      ""
     ],
-    "/download/": [
+    "/tools/": [
       {
         "text": "Download",
-        "collapsable": false,
         "children": [
-          "/download/youtube/",
-          "/download/minyami/",
-          "/download/kkr/",
-          "/download/radigo/",
-          "/download/rget/",
-          "/download/m3u8/"
+          "/tools/youtube/",
+          "/tools/minyami/",
+          "/tools/kkr/",
+          "/tools/radigo/",
+          "/tools/rget/",
+          "/tools/m3u8/"
         ]
       }
+    ],
+    "/preparation/": [
+      "/preparation/"
+    ],
+    "/storage/": [
+      "/storage/"
     ]
   },
   "locales": {
@@ -30,7 +53,6 @@ export const themeData = {
       "selectLanguageName": "English"
     }
   },
-  "navbar": [],
   "darkMode": true,
   "repo": null,
   "selectLanguageText": "Languages",

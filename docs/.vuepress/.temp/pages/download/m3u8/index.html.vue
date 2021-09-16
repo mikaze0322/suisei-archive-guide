@@ -9,10 +9,10 @@
 </ul>
 <h2 id="link-extraction" tabindex="-1"><a class="header-anchor" href="#link-extraction" aria-hidden="true">#</a> Link Extraction</h2>
 <p><img src="@source/download/m3u8/m3u8-0001.jpg" alt="step"></p>
-<p>After entering the streaming page, press F12 on your keyboard to bring up the developer console for your browser. Click on the &quot;Network&quot; tab on the top (the <b><font color="red">RED</font></b> arrow).</p>
-<p>In the &quot;Filter URLs&quot; section, type in <code>m3u8</code>, then <strong>refresh the page</strong>. You should see the main <code>.m3u8</code> link generated (the <b><font color="green">GREEN</font></b> arrow).</p>
+<p>After entering the streaming page, press F12 on your keyboard to bring up the developer console for your browser. Click on the &quot;Network&quot; tab on the top (the RED arrow).</p>
+<p>In the &quot;Filter URLs&quot; section, type in <code>m3u8</code>, then <strong>refresh the page</strong>. You should see the main <code>.m3u8</code> link generated (the GREEN arrow).</p>
 <p>If the default resolution isn't 1080p don't worry, keep the developer console open and select 1080p manually and you should be able to see the main <code>.m3u8</code> link generate.</p>
-<p>Right click the .m3u8 link (the <b><font color="blue">BLUE</font></b> arrow), and select Copy &gt; Copy URL. <strong>This is the URL to the actual video source, so make sure you write it down somewhere</strong></p>
+<p>Right click the .m3u8 link (the BLUE arrow), and select Copy &gt; Copy URL. <strong>This is the URL to the actual video source, so make sure you write it down somewhere</strong></p>
 <div class="custom-container warning"><p class="custom-container-title">WARNING</p>
 <p>Make sure the actual extracted link looks like cam_v1_.m3u8, or it might not contain audio.</p>
 </div>

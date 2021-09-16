@@ -40,8 +40,14 @@ export const data = {
   ],
   "filePathRelative": "download/kkr/README.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1631773879000,
+    "contributors": [
+      {
+        "name": "aozaki-kuro",
+        "email": "aozaki.kuro@gmail.om",
+        "commits": 1
+      }
+    ]
   }
 }
 

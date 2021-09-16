@@ -1,7 +1,7 @@
 {
-    "name": "VuePress",
-    "short_name": "VuePress",
-    "description": "Vue-powered Static Site Generator",
+    "name": "Suisei Archive Guide",
+    "short_name": "Suisei Archive Guide",
+    "description": "This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#fff",

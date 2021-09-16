@@ -1,5 +1,5 @@
 export const themeData = {
-  "logo": "/logo.png",
+  "logo": "/android-chrome-192x192.png",
   "contributors": false,
   "lastUpdated": false,
   "navbar": [

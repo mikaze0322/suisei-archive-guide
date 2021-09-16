@@ -8,14 +8,14 @@ export const siteData = {
       "link",
       {
         "rel": "icon",
-        "href": "/logo.png"
+        "href": "/android-chrome-192x192.png"
       }
     ],
     [
       "meta",
       {
         "name": "twitter:card",
-        "content": "https://guide.suisei.cc/logo.png"
+        "content": "https://guide.suisei.cc/android-chrome-192x192.png"
       }
     ],
     [
@@ -29,7 +29,7 @@ export const siteData = {
       "meta",
       {
         "name": "twitter:image",
-        "content": "https://guide.suisei.cc/logo.png"
+        "content": "https://guide.suisei.cc/android-chrome-192x192.png"
       }
     ],
     [
@@ -71,7 +71,21 @@ export const siteData = {
       "meta",
       {
         "property": "og:image",
-        "content": "https://guide.suisei.cc/logo.jpg"
+        "content": "https://guide.suisei.cc/android-chrome-192x192.png"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "manifest",
+        "href": "/manifest.webmanifest"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "theme-color",
+        "content": "#3eaf7c"
       }
     ]
   ],

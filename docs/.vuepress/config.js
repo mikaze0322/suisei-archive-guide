@@ -3,16 +3,18 @@ module.exports = {
   title: "Suisei Archive Guide",
   description: "This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.",
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }],
-    ['meta', { name: 'twitter:card', content: 'https://guide.suisei.cc/logo.png' }],
+    ['link', { rel: 'icon', href: '/android-chrome-192x192.png' }],
+    ['meta', { name: 'twitter:card', content: 'https://guide.suisei.cc/android-chrome-192x192.png' }],
     ['meta', { name: 'twitter:site', content: 'Suisei Archive Guide | Treasure every moment' }],
-    ['meta', { name: 'twitter:image', content: 'https://guide.suisei.cc/logo.png' }],
+    ['meta', { name: 'twitter:image', content: 'https://guide.suisei.cc/android-chrome-192x192.png' }],
     ['meta', { name: 'twitter:description', content: 'This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.' }],
     ['meta', { property: 'og:type', content: 'article' }],
     ['meta', { property: 'og:title', content: 'Suisei Archive Guide | Treasure every moment' }],
     ['meta', { property: 'og:site_name', content: 'Suisei Archive Guide' }],
     ['meta', { property: 'og:url', content: 'https://guide.suisei.cc/' }],
-    ['meta', { property: 'og:image', content: 'https://guide.suisei.cc/logo.jpg' }],
+    ['meta', { property: 'og:image', content: 'https://guide.suisei.cc/android-chrome-192x192.png' }],
+    ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
   ],
   markdown: {
     lineNumbers: false // 代码块显示行号
@@ -24,9 +26,15 @@ module.exports = {
         id: 'G-3F72EW40RP',
       },
     ],
+    [
+      '@vuepress/pwa',
+      {
+        skipWaiting: true,
+      },
+    ],
   ],
   themeConfig: {
-    logo: '/logo.png',
+    logo: '/android-chrome-192x192.png',
     contributors: false,
     lastUpdated: false,
     navbar: [

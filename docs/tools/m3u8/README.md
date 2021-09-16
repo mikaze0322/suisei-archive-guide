@@ -15,7 +15,7 @@ There are a lot of sites that are not officially supported by youtube-dl / yt-dl
 
 After entering the streaming page, press F12 on your keyboard to bring up the developer console for your browser. Click on the "Network" tab on the top (the RED arrow).
 
-In the "Filter URLs" section, type in `m3u8`, then **refresh the page**. You should see the main `.m3u8` link generated (the GREEN arrow).
+In the "Filter URLs" section, type in `m3u8`, then **refresh the page**. You should see the main `.m3u8` link generated (the <font color=green>GREEN</font> arrow).
 
 If the default resolution isn't 1080p don't worry, keep the developer console open and select 1080p manually and you should be able to see the main `.m3u8` link generate.
 

@@ -4,7 +4,7 @@
 
 This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.
 
-Purpose: <em>Treasure every moment of our dear comet.</em>
+Purpose: *Treasure every moment of our dear comet.*
 
 ## IMPORTANT
 
@@ -16,15 +16,11 @@ IF YOU HAVE ANY PROBLEMS, READ THE `README.MD` IN EVERY REPO FIRST.
 
 - Re-written and delopyed to Vercel
 
-<details>
-  <summary>Earlier Changelogs</summary>
-  <br>
-  2021/08/18
-  <br>
-  - Added `Minyami` for niconico timeshift download
-  <br>
-  - Changed the style some badges
-</details>
+::: details Earlier Changelogs
+2021/08/18
+- Added `Minyami` for niconico timeshift download
+- Changed the style some badges
+:::
 
 ## Disclaimer
 

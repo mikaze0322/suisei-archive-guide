@@ -26,5 +26,5 @@ packages/@vuepress/shared-utils/types/
 .cache
 .temp/
 .cache/
-*.pack
-*.pack.old
+index.pack
+index.pack.old

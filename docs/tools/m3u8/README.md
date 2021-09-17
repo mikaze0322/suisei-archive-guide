@@ -13,13 +13,13 @@ There are a lot of sites that are not officially supported by youtube-dl / yt-dl
 
 ![step](./m3u8-0001.jpg)
 
-After entering the streaming page, press F12 on your keyboard to bring up the developer console for your browser. Click on the "Network" tab on the top (the <font v-pre color=#e93320>RED</font> arrow).
+After entering the streaming page, press F12 on your keyboard to bring up the developer console for your browser. Click on the "Network" tab on the top (the <span style="color:#e93320;font-weight:bold">RED</span> arrow).
 
-In the "Filter URLs" section, type in `m3u8`, then **refresh the page**. You should see the main `.m3u8` link generated (the **<font v-pre color=#59ac59>GREEN</font>** arrow).
+In the "Filter URLs" section, type in `m3u8`, then **refresh the page**. You should see the main `.m3u8` link generated (the <span style="color:#59ac59;font-weight:bold">GREEN</span> arrow).
 
 If the default resolution isn't 1080p don't worry, keep the developer console open and select 1080p manually and you should be able to see the main `.m3u8` link generate.
 
-Right click the .m3u8 link (the **<font v-pre color=#43a2e3>BLUE</font>** arrow), and select Copy > Copy URL. **This is the URL to the actual video source, so make sure you write it down somewhere**
+Right click the .m3u8 link (the <span style="color:#43a2e3;font-weight:bold">BLUE</span> arrow), and select Copy > Copy URL. **This is the URL to the actual video source, so make sure you write it down somewhere**
 
 ::: warning
 Make sure the actual extracted link looks like cam_v1_.m3u8, or it might not contain audio.

@@ -1,6 +1,6 @@
 # Introduction
 
-<p style="text-align:center; font-style:italic; font">
+<p style="text-align:center; font-style:italic">
     <a href="https://www.youtube.com/channel/UC5CwaMl1eIgY8h02uZw7u8A" target="_blank" rel="noopener noreferrer"><img src="/cover.png" width="100rem" height="100rem" alt="comet"></a>
     <br>
     Treasure every moment of our dear comet

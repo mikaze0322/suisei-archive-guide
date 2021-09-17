@@ -1,10 +1,10 @@
 # Introduction
 
+<p style="text-align:center; font-style:italic; font"><img src="/android-chrome-192x192.png" width="100rem"><br>Treasure every moment of our dear comet</p>
+
 ## What is this?
 
 This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.
-
-Purpose: *Treasure every moment of our dear comet.*
 
 ## IMPORTANT
 
@@ -32,7 +32,7 @@ IF YOU HAVE ANY PROBLEMS, READ THE `README.MD` IN EVERY REPO FIRST.
 1. This Guide was written under the **CC BY-NC-SA 4.0** license, please confirm the guidelines before reposting.
 2. This Guide does not provide any tool or script to grab DRM protected content.
 3. This Guide is made for Hoshiyomis to archive Suisei's activities on YouTube, Niconico and other streaming services.
-4. The copyright of all contents belongs to Hoshimachi Suisei / Hololive / Cover Corp. and the proper copyright holder/s.
+4. The copyright of all contents archived belongs to Hoshimachi Suisei / Hololive / Cover Corp. and the proper copyright holder/s.
 5. This Guide will be deleted if there is a formal takedown request.
 6. Please do not redistribute / re-upload the content archived on public channels. This applies especially to distribution for Baidu Tieba / Bilibili / NGA / QQ groups.
 7. If you need materials to make a clip or introduction of Suisei, please be sure it's positive and won't damage her reputation.
@@ -45,4 +45,4 @@ Site created using [VuePress](https://vuepress.vuejs.org/)
 
 Deployed on [Vercel](http://vercel.com/)
 
-Search (is going to be) provided by [DocSearch](https://docsearch.algolia.com/)
+Search (will be) provided by [DocSearch](https://docsearch.algolia.com/)

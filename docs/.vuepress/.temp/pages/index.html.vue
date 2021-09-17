@@ -1,4 +1,5 @@
 <template><h1 id="introduction" tabindex="-1"><a class="header-anchor" href="#introduction" aria-hidden="true">#</a> Introduction</h1>
+<p style="text-align:center; font-style:italic;"><img src="/android-chrome-192x192.png" width="100rem"><br>Treasure every moment of our dear comet</p>
 <h2 id="what-is-this" tabindex="-1"><a class="header-anchor" href="#what-is-this" aria-hidden="true">#</a> What is this?</h2>
 <p>This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.</p>
 <p>Purpose: <em>Treasure every moment of our dear comet.</em></p>

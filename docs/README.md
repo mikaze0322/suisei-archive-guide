@@ -1,7 +1,7 @@
 # Introduction
 
 <p style="text-align:center; font-style:italic; font">
-    <a><img src="/cover.png" width="100rem"></a>
+    <a href="https://www.youtube.com/channel/UC5CwaMl1eIgY8h02uZw7u8A" target="_blank" rel="noopener noreferrer"><img src="/cover.png" width="100rem" alt="comet"></a>
     <br>
     Treasure every moment of our dear comet
 </p>
@@ -42,7 +42,7 @@ This is a brief archiving guide written for Hoshiyomis to archive every stream o
 ## Credit
 
 <p>
-    <a><img src="https://img.shields.io/badge/VuePress-35495E?style=for-the-badge&amp;logo=vuedotjs&amp;logoColor=4FC08D" alt="Vue"></a> <a><img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Vercel"></a> <a><img src="https://img.shields.io/badge/Algolia-%235468FF.svg?style=for-the-badge&amp;logo=algolia&amp;logoColor=white" alt="Algolia"></a>
+    <a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/VuePress-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" alt="Vue"></a> <a href="http://vercel.com/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"></a> <a href="https://docsearch.algolia.com/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Algolia-%235468FF.svg?style=for-the-badge&logo=algolia&logoColor=white" alt="Algolia"></a>
 </p>
 
 Site created using [VuePress](https://vuepress.vuejs.org/)

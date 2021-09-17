@@ -14,17 +14,13 @@ TODOs.md
 .vscode
 .idea
 
+# VuePress temp directory
+.temp
+.cache
+
 # Docs dist directory
 /vuepress
 
 # Typescript build dist
 packages/@vuepress/shared-utils/lib/
 packages/@vuepress/shared-utils/types/
-
-# temp and cache
-.temp
-.cache
-.temp/
-.cache/
-index.pack
-index.pack.old

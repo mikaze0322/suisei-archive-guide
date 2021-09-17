@@ -41,10 +41,6 @@ This is a brief archiving guide written for Hoshiyomis to archive every stream o
 
 ## Credit
 
-<p>
-    <a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/VuePress-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" alt="Vue" width="112rem" height="28rem"></a> <a href="http://vercel.com/" target="_blank" rel="noopener noreferrer" width="93.5rem" height="28rem"><img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"></a> <a href="https://docsearch.algolia.com/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Algolia-%235468FF.svg?style=for-the-badge&logo=algolia&logoColor=white" alt="Algolia" width="102.75rem" height="28rem"></a>
-</p>
-
 Site created using [VuePress](https://vuepress.vuejs.org/)
 
 Deployed on [Vercel](http://vercel.com/)

@@ -27,9 +27,9 @@ Most of the commands are done in CLI, a GUI is not recommended as it can update 
 
 ### Why using a server
 
-Virtual servers run in server rooms with stable conditions and usually faster Internet connection speeds since these are mostly used by businesses. It also has the advantage of allowing you to run jobs without monitoring them or worrying about interrupting them compared to a local set-up. They are also cheaper to purchase and maintain.
+Virtual servers are running in server rooms with stable conditions and usually have faster Internet connection speeds since these are mostly used by businesses. It also has the advantage of allowing you to run jobs without monitoring them or worrying about interrupting them compared to a local set-up.
 
-And most of all, Linux servers are usually **cheaper** than Windows servers since Linux does not require license fee.
+Linux servers are usually **cheaper** than Windows servers since Linux does not require license fee.
 
 ### Enviroment Preparation
 
@@ -74,4 +74,3 @@ Most software used in downloading are not yet listed. Please check every method 
 Instructions on their usage can be found on their respective chapters.
 
 For any other questions, please read the README.md in the original repos.
-

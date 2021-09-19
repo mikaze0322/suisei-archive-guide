@@ -30,7 +30,7 @@
 
 :::
 
-## Disclaimer
+## 免责声明
 
 1. This Guide was a personal, non-commercial project, written under the **CC BY-NC-SA 4.0** license, please confirm the guidelines before reposting.
 2. This Guide does not provide any tool or script to grab DRM protected content.
@@ -42,7 +42,7 @@
 8. This Guide does not support uploading content available only behind pay-walls. This includes Member-only videos, Paid Lives, Songs, Albums, etc.
 9. The Guide does not and will not deal with issues caused by unexpected content distribution by other parties.
 
-## Credit
+## 制作
 
 站点框架 [VuePress](https://vuepress.vuejs.org/)
 

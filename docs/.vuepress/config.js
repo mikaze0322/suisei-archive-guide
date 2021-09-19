@@ -14,7 +14,7 @@ module.exports = {
     ['meta', { property: 'og:url', content: 'https://guide.suisei.cc/' }],
     ['meta', { property: 'og:image', content: 'https://guide.suisei.cc/ringo.png' }],
     ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
-    ['meta', { name: 'theme-color', content: '#7ecde6' }],
+    ['meta', { name: 'theme-color', content: '#bb4036' }],
   ],
   markdown: {
     lineNumbers: false // 代码块显示行号

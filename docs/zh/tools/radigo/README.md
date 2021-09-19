@@ -2,7 +2,7 @@
 
 [ [radigo](https://github.com/yyoshiki41/radigo) ]
 
-This is a project mainly focused on archiving radio programs on [radiko.jp](https://radiko.jp)
+本项目仅用于拉取 [radiko.jp](https://radiko.jp) 的电台存档。
 
 ## 适用站点
 
@@ -12,7 +12,7 @@ This is a project mainly focused on archiving radio programs on [radiko.jp](http
 
 ### Windows
 
-Read [Windows Preparation](/docs/preparation/windows.md) . Then download `radigo.exe` from [release](https://github.com/yyoshiki41/radigo/releases/) and put it in your `$PATH` folder.
+阅读 [Windows 环境准备](/docs/preparation/windows.md) 一节，并从[官方源](https://github.com/yyoshiki41/radigo/releases/)下载 `radigo.exe` 并把它放入 `$PATH` 文件夹。
 
 ### Ubuntu
 

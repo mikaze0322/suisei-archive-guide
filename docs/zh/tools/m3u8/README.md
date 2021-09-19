@@ -1,8 +1,8 @@
-# General .m3u8 stream
+# 抽取 .m3u8 链接
 
 There are a lot of sites that are not officially supported by youtube-dl / yt-dlp, but with an `m3u8` link can still be downloaded.
 
-## Target Site
+## 适用站点
 
 - SPWN
 - Nissin

@@ -4,11 +4,11 @@
 
 This is a project mainly focused on archiving radio programs on [radiko.jp](https://radiko.jp)
 
-## Target Site
+## 适用站点
 
 - Radiko.jp
 
-## Installation
+## 安装
 
 ### Windows
 
@@ -25,7 +25,7 @@ sudo chmod a+rx /usr/local/bin/radigo
 
 Type `radigo` to see if it works.
 
-## Usage
+## 使用
 
 ### Normal
 

@@ -77,7 +77,10 @@ module.exports = {
     [
       '@vuepress/plugin-shiki',
       {
-        Lang: "bash",
+        Lang: [
+          "bash",
+          "powershell",
+        ],
         theme: "material-default",
       },
     ],
@@ -162,11 +165,11 @@ module.exports = {
       '/zh/': {
         navbar: [
           {
-            text: "Preparation",
+            text: "环境准备",
             link: "/zh/preparation/",
           },
           {
-            text: "Tools",
+            text: "常用工具",
             link: "/zh/tools/",
             children: [
               "/zh/tools/youtube/",
@@ -178,7 +181,7 @@ module.exports = {
             ],
           },
           {
-            text: "Storage",
+            text: "存储管理",
             link: "/zh/storage/",
             children: [
               "/zh/storage/rclone/",
@@ -189,7 +192,7 @@ module.exports = {
           "/zh/": [""],
           "/zh/tools/": [
             {
-              text: "Tools",
+              text: "常用工具",
               children: [
                 "/zh/tools/youtube/",
                 "/zh/tools/minyami/",
@@ -203,7 +206,7 @@ module.exports = {
           "/zh/preparation/": ["/zh/preparation/"],
           "/zh/storage/": [
             {
-              text: "Storage",
+              text: "存储管理",
               children: [
                 "/zh/storage/rclone/"
               ]

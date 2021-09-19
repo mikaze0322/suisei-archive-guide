@@ -6,11 +6,13 @@ This will be the primary tool to download youtube-dl videos, as well as the gene
 
 If you are using `yt-dlp` (and I recommend using it most of the time), just replace all `youtube-dl` with `yt-dlp` .
 
-The workflow of youtube-dl / yt-dlp:
+::: tip Workflow
 
-> Downloaded video and audio → Merged .mp4 file → Write metadata → Write thumbnail
+Downloaded video and audio → Merged .mp4 file → Write metadata → Write thumbnail
 
-## Target Site
+:::
+
+## 适用站点
 
 - YouTube
 - TVer
@@ -19,7 +21,7 @@ The workflow of youtube-dl / yt-dlp:
 - Any sites on the support list
 - Any sites using non-encrypted `.m3u8` stream
 
-## Installation
+## 安装
 
 ### Windows
 
@@ -51,7 +53,7 @@ sudo -H pip install --upgrade youtube-dl
 
 If you are using `yt-dlp` (and I suggest using it for most of the time), just replace all `youtube-dl` with `yt-dlp`.
 
-## Usage
+## 使用
 
 To start the download
 
@@ -59,7 +61,7 @@ To start the download
 youtube-dl "url"
 ```
 
-### Configuration
+### 设置
 
 You will need to do further configuration to download a better quality file or for membership-only archives.
 

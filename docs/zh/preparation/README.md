@@ -1,8 +1,8 @@
-# Preparation
+# 环境准备
 
 [[toc]]
 
-## Windows Preparation
+## Windows
 
 Windows does not require a very complicated guide to prepare.
 
@@ -17,23 +17,23 @@ setx /M PATH "%PATH%;<REPLACE THIS WITH THE PATH TO YOUR DIRECTORY>"
 ```
 The `REPLACE THIS WITH THE PATH TO YOUR DIRECTORY` section should be the folder where your tools are in. Example cases would be `J:\Youtube Downloads` or `F:\Video Archive` .
 
-### Environment
+### 其他相关依赖
 
 The required packages can be found in each section, and require just downloading the installer from the official site. Windows does not have many problems with user permissions so it's easier for new users to understand.
 
 Most of the commands are done in CLI, a GUI is not recommended as it can update slowly and can cause questions outside the scope of this guide.
 
-## Ubuntu Preparation
+## Ubuntu
 
-### Why using a server
+### 为何选择Ubuntu服务器
 
 Virtual servers are running in server rooms with stable conditions and usually have faster Internet connection speeds since these are mostly used by businesses. It also has the advantage of allowing you to run jobs without monitoring them or worrying about interrupting them compared to a local set-up.
 
 Linux servers are usually **cheaper** than Windows servers since Linux does not require license fee.
 
-### Enviroment Preparation
+### 依赖包安装
 
-#### Upgrade the system
+#### 升级系统
 
 Jobs are running on [Amazon Lightsail](https://lightsail.aws.amazon.com/), using Ubuntu 20.04 LTS.
 
@@ -67,7 +67,7 @@ The script should install the latest LTS version Node.js for you. If not you can
 
 Type `npm version` to see if it's properly installed.
 
-### Other packages
+### 其他相关依赖
 
 Most software used in downloading are not yet listed. Please check every method for details.
 

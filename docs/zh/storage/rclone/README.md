@@ -4,7 +4,7 @@
 
 rclone is nearly the best universal way to copy / sync the files among your local and the cloud drives.
 
-## Target Site
+## 适用站点
 
 - OneDrive
 - Google Drive
@@ -13,7 +13,7 @@ rclone is nearly the best universal way to copy / sync the files among your loca
 - ...
 - etc.
 
-## Installation
+## 安装
 
 ### Windows
 
@@ -27,14 +27,14 @@ Read [Windows Preparation](/docs/preparation/windows.md). Then download `rclone.
 curl https://rclone.org/install.sh | sudo bash
 ```
 
-## Configuration
+## 设置
 
 The configuration part is extremely complicated so I won't write it here, just follow the official guide listed below
 
 - For OneDirve click [HERE](https://rclone.org/onedrive/)
 - For Google Drive clike [HERE](https://rclone.org/drive/)
 
-## Usage
+## 使用
 
 Once you are done with the configuration, you can start uploading to or downloading from the remote.
 

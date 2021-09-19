@@ -2,55 +2,57 @@
 
 [ [minyami](https://github.com/Last-Order/Minyami) ]
 
-This is a tool mainly focued on nicolive timeshift ( stream archive ) and AbemaTV downloading.
+本工具主要用于 Niconico Timeshift （直播存档），以及 AbemaTV 影片的下载。
 
 ## 适用站点 
 
-- Nico Live ( timeshift only )
+- Nico 直播 ( 仅直播部分 )
 - AbemaTV
 
 ## 安装
 
 ### Windows
 
-Check [Node.js official site](https://nodejs.org/) and download the `LTS` version.
+打开 [Node.js 官方网站](https://nodejs.org/) 并下载 `LTS` 版本。
 
-To check if installation is successful, type `npm version` to see if it returns value.
+输入 `npm version` 检查是否安装成功。
 
 ### Ubuntu
 
-See [Preparations](/docs/preparation/ubuntu?id=nodejs) to install `npm` and `node.js` environment.
+阅读 [Ubuntu 环境准备](/docs/preparation/ubuntu?id=nodejs) 一节，安装 `npm` 以及 Node.js 。
 
-Once done with installation, install by `npm`
+安装成功后，输入以下命令安装 `minyami`
 
 ```bash
 npm i -g minyami
 ```
 
-### Plugin
+### 浏览器插件
 
-`minyami` requires a Chrome extension to extract the replay keys and other values to download.
+`minyami` 需要配合浏览器插件生成下载所需要的命令。
 
-Chrome extension Link [Here](https://chrome.google.com/webstore/detail/minyami/cgejkofhdaffiifhcohjdbbheldkiaed) .
+Chrome 插件点击 [这里](https://chrome.google.com/webstore/detail/minyami/cgejkofhdaffiifhcohjdbbheldkiaed) 进行下载及安装。
 
 ## 使用
 
-Open a nicolive timeshift link and click the plugin to extract the command you will need for download.
+首先打开一个 Nico 直播的存档页面，随后点击插件，插件会自动生成下载所需的命令。
 
 ![Plugin](./minyami-0001.jpg)
 
-Click *Copy* and paste it in your CLI to start download.
+点击复制，将命令粘贴并执行，即可开始下载。
 
-It also applies to AbemaTV.
+AbemaTV 页面下载流程相同，不再赘述。
 
-## Caution
+## 注意
 
-- Premium subscription is optional, which will ensure you can extract the highest quality video during busy hours.
+要顺利下载 Nico 直播存档，你可能需要准备这些
 
-- Channel subscription is optional, which will grant you the full access to the stream.
+- 高级会员（可选），这样在 Niconico 的繁忙时段也可以下载最高画质的影片。
 
-- Japan IP is optional, but some programs are not available outside Japan (especially streams with anime playing).
+- 频道会员（可选），部分直播需要频道会员订阅才可以观看（完整）存档。
 
-- There are reports saying Niconico banned some IPs because of abuse, if you find that `minyami` cannot download, please try another IP.
+- 日本 IP（可选），部分节目锁区，仅供日本用户观赏，尤其是动画的上映会等。
 
-If you have any questions, please read the `README.md` in the original repos.
+有报告称 Niconico 屏蔽了部分机房 IP 地址。如果发现 `minyami` 持续报错，请尝试更换 IP 后再尝试
+
+如果有其他使用上的疑问，请阅读 Github 上的 `README.md` 获取更多信息。

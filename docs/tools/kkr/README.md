@@ -4,11 +4,11 @@
 
 This is the project mainly focused on YouTube live stream recording, especially useful for an unarchived stream.
 
-## 适用站点
+## Target Site
 
 - YouTube
 
-## 安装
+## Installation
 
 ### Windows
 
@@ -26,7 +26,7 @@ Once done with installation, install by `npm`
 npm i -g kkr
 ```
 
-## 使用
+## Usage
 
 ```bash
 kkr -d "<youtube link>" --live

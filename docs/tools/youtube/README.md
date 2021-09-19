@@ -21,7 +21,7 @@ Downloaded video and audio → Merged .mp4 file → Write metadata → Write thu
 - Any sites on the support list
 - Any sites using non-encrypted `.m3u8` stream
 
-## 安装
+## Installation
 
 ### Windows
 
@@ -53,7 +53,7 @@ sudo -H pip install --upgrade youtube-dl
 
 If you are using `yt-dlp` (and I suggest using it for most of the time), just replace all `youtube-dl` with `yt-dlp`.
 
-## 使用
+## Usage
 
 To start the download
 
@@ -61,7 +61,7 @@ To start the download
 youtube-dl "url"
 ```
 
-### 设置
+### Configuration
 
 You will need to do further configuration to download a better quality file or for membership-only archives.
 

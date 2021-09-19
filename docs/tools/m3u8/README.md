@@ -2,7 +2,7 @@
 
 There are a lot of sites that are not officially supported by youtube-dl / yt-dlp, but with an `m3u8` link can still be downloaded.
 
-## 适用站点
+## Target Site
 
 - SPWN
 - Nissin

@@ -4,12 +4,12 @@
 
 This is a project mainly focused on recording radio stations, but here we use it to solve the [Hibiki Radio Station](http://hibiki-radio.jp/) .
 
-## 适用站点
+## Target Site
 
 - Hibiki Radio Station
 - etc.
 
-## 安装
+## Installation
 
 ### Windows
 
@@ -29,7 +29,7 @@ Then you can install `rget` by using `gem`
 sudo gem install rget
 ```
 
-## 使用
+## Usage
 
 ::: danger
 This program has only tested on Ubuntu, Windows users are advised to be careful in its usage.

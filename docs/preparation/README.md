@@ -42,7 +42,7 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
-Install the required components
+Next step is to install the other required components
 
 #### FFmpeg
 

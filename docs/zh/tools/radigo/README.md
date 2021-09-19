@@ -16,34 +16,38 @@
 
 ### Ubuntu
 
-Download from [release](https://github.com/yyoshiki41/radigo/releases/) and
+从[官方源](https://github.com/yyoshiki41/radigo/releases/)下载对应版本并执行如下命令
 
 ```bash
 mv /usr/local/bin/radigo
 sudo chmod a+rx /usr/local/bin/radigo
 ```
 
-Type `radigo` to see if it works.
+输入 `radigo` 来验证安装是否成功。
 
 ## 使用
 
-### Normal
+### 常规节目
+
+radiko 会根据 IP 所在地决定可用的电台节目。
+
+基本下载命令如下
 
 ```bash
 radigo rec -a="area ID" -id="program ID" -s="timestamp"
 ```
 
-`area ID` can be found by copying the links in the footer.
+`area ID` 可以从页面底部找到。
 
 ![footer](./radigo-0001.jpg)
 
-You will get a link like this and `JP13` is the `area ID`
+点开后可以发现类似这样的一个链接，如 `JP13` 是东京的 `area ID` 。
 
 ```bash
 https://radiko.jp/index/JP13
 ```
 
-`program ID` and `timestamp` were extracted from the url
+`program ID` 和 `timestamp` 则是从对应存档的链接中找到。
 
 ```
 https://radiko.jp/#!/ts/QRR/20210914175500
@@ -53,23 +57,23 @@ https://radiko.jp/#!/ts/QRR/20210914175500
 
 `timestamp` = 20210914175500
 
-### Premium
+### 高级订阅
 
-There are some programs stream outside the area that require a premium subscription to listen to the archive.
+部分节目归属于其他地区， radiko 要求用户订阅高级账户，方可收听这些区域外电台的存档。
 
-First of all you have to sign up and pay for the premium subscription.
+第一步自然是注册并通过信用卡支付高级订阅费用。
 
-If you are using Ubuntu, then the command is written like this:
+如果您在使用 Ubuntu ，那么请执行如下命令
 
 ```bash
 export RADIKO_MAIL="radigo@example.com" && export RADIKO_PASSWORD="password"
 radigo rec -a="area ID" -id="program ID" -s="timestamp"
 ```
 
-You can also hardcode the values into your `~/.zshrc` or `~/.bashrc` .
+您也可以将登录信息写入 `~/.zshrc` 或 `~/.bashrc` 。
 
-## Caution
+## 注意
 
-Radiko is not available outside Japan so you will need a Japan IP to extract the link and timestamps.
+Radiko 仅面向日本本土服务，您至少需要一个日本 IP 来获取下载所需的相关信息。
 
-The IP region affects the program you can hear, e.g. my server's IP is located in Tokyo so I can only archive the programs available in Tokyo without a premium account.
+您的 IP 所在地会影响您可以收听 / 下载的内容。例如：我的服务器 IP 被划归至东京，那么我的服务器在没有高级订阅的情况下，仅可接收到默认分配给东京的节目。

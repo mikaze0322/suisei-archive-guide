@@ -165,7 +165,7 @@ module.exports = {
       '/zh/': {
         navbar: [
           {
-            text: "环境准备",
+            text: "准备工作",
             link: "/zh/preparation/",
           },
           {

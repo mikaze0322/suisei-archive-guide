@@ -47,13 +47,13 @@ I will take OneDrive as the example since it has some special config to do.
 For download
 
 ```bash
-rclone copy -P "<your remote drive>":"<remote folder>" "<your local destination>" --onedrive-encoding "Slash" 
+rclone copy -P "<remote drive>":"<remote folder>" "<local folder>"
 ```
 
 For upload
 
 ```bash
-rclone copy -P "<your local destination>" "<your remote drive>":"<remote folder>" --onedrive-encoding "Slash" 
+rclone copy -P "<local foler>" "<remote drive>":"<remote folder>"
 ```
 
 ![Result](./rclone-0001.jpg)
@@ -62,4 +62,10 @@ rclone copy -P "<your local destination>" "<your remote drive>":"<remote folder>
 
 `-P`: Show progress when transferring, without the flag rclone will run with no info shown.
 
-`--onedrive-encoding "Slash"`: A special flag that let the rclone only converts filenames with `/` in it, it is important so it won't mess with `#`.
+::: tip
+
+You can add `--onedrive-encoding "Slash"`, which is special flag that let the rclone only converts filenames with `/` in it.
+
+It is important so it won't mess with `#`.
+
+:::

@@ -39,7 +39,7 @@ There are 2 ways to install
 - Install using `curl`
 
 ```bash
-sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/
 sudo chmod a+rx /usr/local/bin/youtube-dl
 ```
 
@@ -87,9 +87,13 @@ For Ubuntu, the config file is located at `/etc/youtube-dl.conf`.
 
 Adding `--cookies cookies.txt` option helps downloading the member-only contents.
 
-You can also use `--format (bestvideo[vcodec=vp9]/bestvideo)+(bestaudio[acodec=opus]/bestaudio)bestvideo+bestaudio/best/mp4` to prefer `vp9` + `opus`.
+:::tip
 
-To get a `cookies.txt` using the plugin: [ [Chrome](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid) ] [ [Firefox](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) ]
+You can also use `--format (bestvideo[vcodec=vp9]/bestvideo)+(bestaudio[acodec=opus]/bestaudio)bestvideo+bestaudio/best/mp4` to prefer `vp9` + `opus` while also enable other formats as a fallback.
+
+:::
+
+Use this plugin to get a `cookies.txt` : [ [Chrome](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid) ] [ [Firefox](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) ]
 
 ### Manual Quality Select
 

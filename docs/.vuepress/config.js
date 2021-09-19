@@ -58,6 +58,8 @@ module.exports = {
             placeholder: '搜索',
           },
         },
+        // 排除首页
+        isSearchable: (page) => page.path !== '/',
       },
     ],
     //[
@@ -72,6 +74,13 @@ module.exports = {
     //    },
     //  },
     //],
+    [
+      '@vuepress/plugin-shiki',
+      {
+        Lang: "bash",
+        theme: "material-default",
+      },
+    ],
   ],
   themeConfig: {
     logo: '/logo.png',

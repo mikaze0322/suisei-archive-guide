@@ -47,6 +47,19 @@ module.exports = {
         },
       },
     ],
+    [
+      '@vuepress/plugin-search',
+      {
+        locales: {
+          '/': {
+            placeholder: 'Search',
+          },
+          '/zh/': {
+            placeholder: '搜索',
+          },
+        },
+      },
+    ],
     //[
     //  '@vuepress/docsearch',
     //  {

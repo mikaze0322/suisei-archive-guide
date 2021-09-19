@@ -1,7 +1,4 @@
 module.exports = {
-  lang: "en-US",
-  title: "Suisei Archive Guide",
-  description: "This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.",
   head: [
     ['link', { rel: 'icon', href: '/ringo.png' }],
     ['meta', { name: 'twitter:card', content: 'https://guide.suisei.cc/ringo.png' }],
@@ -57,6 +54,9 @@ module.exports = {
           '/zh/': {
             placeholder: '搜索',
           },
+          '/zh-TW/': {
+            placeholder: '搜尋',
+          },
         },
         // 排除首页
         isSearchable: (page) => page.path !== '/',
@@ -82,49 +82,138 @@ module.exports = {
       },
     ],
   ],
+  locales: {
+    '/': {
+      lang: "en-US",
+      title: "Suisei Archive Guide",
+      description: "This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.",
+    },
+    '/zh/': {
+      lang: 'zh-CN',
+      title: "Suisei Archive Guide",
+      description: "This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.",
+    },
+    //'/zh-tw/': {
+    //  lang: 'zh-TW',
+    //  title: "Suisei Archive Guide",
+    //  description: "This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.",
+    //},
+  },
   themeConfig: {
     logo: '/ringo.png',
     contributors: false,
     lastUpdated: false,
-    navbar: [
-      {
-        text: "Preparation",
-        link: "/preparation/",
-      },
-      {
-        text: "Tools",
-        link: "/tools/",
-        children: [
-          "/tools/youtube/",
-          "/tools/minyami/",
-          "/tools/kkr/",
-          "/tools/radigo/",
-          "/tools/rget/",
-          "/tools/m3u8/",
+    locales: {
+      '/': {
+        navbar: [
+          {
+            text: "Preparation",
+            link: "/preparation/",
+          },
+          {
+            text: "Tools",
+            link: "/tools/",
+            children: [
+              "/tools/youtube/",
+              "/tools/minyami/",
+              "/tools/kkr/",
+              "/tools/radigo/",
+              "/tools/rget/",
+              "/tools/m3u8/",
+            ],
+          },
+          {
+            text: "Storage",
+            link: "/storage/",
+            children: [
+              "/storage/rclone/",
+            ],
+          },
         ],
-      },
-      {
-        text: "Storage",
-        link: "/storage/",
-      },
-    ],
-    sidebar: {
-      "/": [""],
-      "/tools/": [
-        {
-          text: "Tools",
-          children: [
-            "/tools/youtube/",
-            "/tools/minyami/",
-            "/tools/kkr/",
-            "/tools/radigo/",
-            "/tools/rget/",
-            "/tools/m3u8/",
+        sidebar: {
+          "/": [""],
+          "/tools/": [
+            {
+              text: "Tools",
+              children: [
+                "/tools/youtube/",
+                "/tools/minyami/",
+                "/tools/kkr/",
+                "/tools/radigo/",
+                "/tools/rget/",
+                "/tools/m3u8/",
+              ],
+            }
           ],
-        }
-      ],
-      "/preparation/": ["/preparation/"],
-      "/storage/": ["/storage/"],
+          "/preparation/": ["/preparation/"],
+          "/storage/": [
+            {
+              text: "Storage",
+              children: [
+                "/storage/rclone/"
+              ]
+            }
+          ],
+        },
+        selectLanguageText: 'Languages',
+        selectLanguageName: 'English',
+        selectLanguageAriaLabel: 'Languages',
+      },
+      '/zh/': {
+        navbar: [
+          {
+            text: "Preparation",
+            link: "/zh/preparation/",
+          },
+          {
+            text: "Tools",
+            link: "/zh/tools/",
+            children: [
+              "/zh/tools/youtube/",
+              "/zh/tools/minyami/",
+              "/zh/tools/kkr/",
+              "/zh/tools/radigo/",
+              "/zh/tools/rget/",
+              "/zh/tools/m3u8/",
+            ],
+          },
+          {
+            text: "Storage",
+            link: "/zh/storage/",
+            children: [
+              "/zh/storage/rclone/",
+            ],
+          },
+        ],
+        sidebar: {
+          "/zh/": [""],
+          "/zh/tools/": [
+            {
+              text: "Tools",
+              children: [
+                "/zh/tools/youtube/",
+                "/zh/tools/minyami/",
+                "/zh/tools/kkr/",
+                "/zh/tools/radigo/",
+                "/zh/tools/rget/",
+                "/zh/tools/m3u8/",
+              ],
+            }
+          ],
+          "/zh/preparation/": ["/zh/preparation/"],
+          "/zh/storage/": [
+            {
+              text: "Storage",
+              children: [
+                "/zh/storage/rclone/"
+              ]
+            }
+          ],
+        },
+        selectLanguageText: '选择语言',
+        selectLanguageName: '简体中文',
+        selectLanguageAriaLabel: '选择语言',
+      },
     },
   }
 }

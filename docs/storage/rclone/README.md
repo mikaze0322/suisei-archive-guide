@@ -1,14 +1,10 @@
-# Storage
-
-[[toc]]
-
-## rclone
+# rclone
 
 [ [rclone](https://rclone.org/) ]
 
 rclone is nearly the best universal way to copy / sync the files among your local and the cloud drives.
 
-### Target Site
+## Target Site
 
 - OneDrive
 - Google Drive
@@ -17,13 +13,13 @@ rclone is nearly the best universal way to copy / sync the files among your loca
 - ...
 - etc.
 
-### Installation
+## Installation
 
-#### Windows
+### Windows
 
 Read [Windows Preparation](/docs/preparation/windows.md). Then download `rclone.exe` from [Download Page](https://rclone.org/downloads/) and put it in your `$PATH` folder.
 
-#### Ubuntu
+### Ubuntu
 
 `rclone` can be installed by using a script
 
@@ -31,14 +27,14 @@ Read [Windows Preparation](/docs/preparation/windows.md). Then download `rclone.
 curl https://rclone.org/install.sh | sudo bash
 ```
 
-### Configuration
+## Configuration
 
 The configuration part is extremely complicated so I won't write it here, just follow the official guide listed below
 
 - For OneDirve click [HERE](https://rclone.org/onedrive/)
 - For Google Drive clike [HERE](https://rclone.org/drive/)
 
-### Usage
+## Usage
 
 Once you are done with the configuration, you can start uploading to or downloading from the remote.
 
@@ -47,13 +43,13 @@ I will take OneDrive as the example since it has some special config to do.
 For download
 
 ```bash
-rclone copy -P "<remote drive>":"<remote folder>" "<local folder>"
+rclone copy -P "remote drive":"remote folder" "local folder"
 ```
 
 For upload
 
 ```bash
-rclone copy -P "<local foler>" "<remote drive>":"<remote folder>"
+rclone copy -P "local folder" "remote drive":"remote folder"
 ```
 
 ![Result](./rclone-0001.jpg)
@@ -64,8 +60,10 @@ rclone copy -P "<local foler>" "<remote drive>":"<remote folder>"
 
 ::: tip
 
-You can add `--onedrive-encoding "Slash"`, which is special flag that let the rclone only converts filenames with `/` in it.
+You can add `--onedrive-encoding "Slash"` .
 
-It is important so it won't mess with `#`.
+This is a special flag that let the rclone only converts filenames with `/` in it.
+
+It is important so rclone won't mess with `#`.
 
 :::

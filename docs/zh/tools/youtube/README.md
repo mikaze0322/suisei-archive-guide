@@ -2,13 +2,13 @@
 
 [ [youtube-dl](https://github.com/ytdl-org/youtube-dl) ] [ [yt-dlp](https://github.com/yt-dlp/yt-dlp) ]
 
-This will be the primary tool to download youtube-dl videos, as well as the generic `.m3u8`.
+这两个工具是下载 YouTube 存档的主力工具，`yt-dlp` 是 `youtube-dl` 的分支，更新更为迅速，修补了众多问题并添加了更多支持的站点。
 
-If you are using `yt-dlp` (and I recommend using it most of the time), just replace all `youtube-dl` with `yt-dlp` .
+尽管以下教程仍旧使用 `youtube-dl` ，但由于 `youtube-dl` 目前存在长期未更新、新功能和支持站点添加缓慢、缩略图添加方式过时等问题，推荐切换至 `yt-dlp` 使用。
 
-::: tip Workflow
+::: tip 工作流
 
-Downloaded video and audio → Merged .mp4 file → Write metadata → Write thumbnail
+分别下载视频流以及音频流 → 使用 FFmpeg 合并为 .mp4 文件 → 写入 meta → 写入缩略图
 
 :::
 
@@ -18,44 +18,50 @@ Downloaded video and audio → Merged .mp4 file → Write metadata → Write thu
 - TVer
 - SPWN
 - ...
-- Any sites on the support list
-- Any sites using non-encrypted `.m3u8` stream
+- 任何其他在程序支持列表中的网站
+- 任何使用非加密 `.m3u8` 进行视频串流的网站
 
 ## 安装
 
 ### Windows
 
-Read [Windows Preparation](/docs/preparation/windows.md). Then download `youtube-dl.exe` from [release](https://github.com/ytdl-org/youtube-dl/releases/) and put it in your `$PATH` folder.
+请阅读 [Windows 环境准备](/docs/preparation/windows.md) 章节，完成相关准备。随后从本章起始处的 Github 链接中下载 `.exe` 并放入 `$PATH` 文件夹。
 
 ### Ubuntu / Linux
 
-Install `python` and the required packages first.
+此处需要安装 Python 环境
+
+::: tip
+
+如果仅使用 `yt-dlp` ，则无需安装 `AtomicParsley`
+
+:::
 
 ```bash
 sudo apt update && sudo upgrade -y
 sudo apt install python3 python3-pip python-is-python3 ffmpeg atomicparsley
 ```
 
-There are 2 ways to install 
+接下来有两种安装方式
 
-- Install using `curl`
+- 通过 `curl` 安装
 
 ```bash
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/
 sudo chmod a+rx /usr/local/bin/youtube-dl
 ```
 
-- Install using `pip3`
+- 通过 `pip3` 包管理器安装
 
 ```bash
 sudo -H pip install --upgrade youtube-dl
 ```
 
-If you are using `yt-dlp` (and I suggest using it for most of the time), just replace all `youtube-dl` with `yt-dlp`.
+如果您准备使用 `yt-dlp` ，请参考其教程，修改下载地址。
 
 ## 使用
 
-To start the download
+下载仅需输入以下命令
 
 ```bash
 youtube-dl "url"
@@ -63,12 +69,12 @@ youtube-dl "url"
 
 ### 设置
 
-You will need to do further configuration to download a better quality file or for membership-only archives.
+如果需要默认下载最高画质的存档，或是需要下载会员限定影片等，则需要进行进一步设置。以下提供参考配置。
 
-For Windows, the config files is located at `%APPDATA%\youtube-dl\config.txt` or `C:\Users\<user name>\youtube-dl.conf`.
+Windows 环境下，配置文件位于 `%APPDATA%\youtube-dl\config.txt` 或 `C:\Users\<user name>\youtube-dl.conf` 。
 
 ```bash
--o 'D:\YouTube\(upload_date)s %(title)s.%(ext)s' # replace the directory
+-o 'D:\YouTube\(upload_date)s %(title)s.%(ext)s'
 --embed-thumbnail
 --format 'bestvideo+bestaudio/best/mp4'
 --merge-output-format mp4
@@ -76,7 +82,7 @@ For Windows, the config files is located at `%APPDATA%\youtube-dl\config.txt` or
 --cookies '/home/ubuntu/cookies.txt' # replace the directory
 ```
 
-For Ubuntu, the config file is located at `/etc/youtube-dl.conf`.
+Ubuntu 环境下，配置文件位于 `/etc/youtube-dl.conf` 。
 
 ```bash
 -o '/home/ubuntu/raw/(upload_date)s %(title)s.%(ext)s' # replace the directory
@@ -87,38 +93,44 @@ For Ubuntu, the config file is located at `/etc/youtube-dl.conf`.
 --cookies '/home/ubuntu/cookies.txt' # replace the directory
 ```
 
-Adding `--cookies cookies.txt` option helps downloading the member-only contents.
+添加 `--cookies cookies.txt` 可以让程序能够下载会员限定等存在限制的影片（地域限制除外）。
 
 :::tip
 
-You can also use `--format (bestvideo[vcodec=vp9]/bestvideo)+(bestaudio[acodec=opus]/bestaudio)bestvideo+bestaudio/best/mp4` to prefer `vp9` + `opus` while also enable other formats as a fallback.
+目前 YouTube 提供了 `vp9` 以及 `opus` 格式。
+
+这一组合可以通过更小的文件体积，提供极为近似的画面以及音质。
 
 :::
 
-Use this plugin to get a `cookies.txt` : [ [Chrome](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid) ] [ [Firefox](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) ]
+如需要默认拉取这一格式组合，可以添加 `--format (bestvideo[vcodec=vp9]/bestvideo)+(bestaudio[acodec=opus]/bestaudio)bestvideo+bestaudio/best/mp4`
 
-### Manual Quality Select
+这样在拉取这一组合的同时将其他格式列入备选，防止报错。
 
-You can manually check and select the quality or specify video / sound to download.
+如果要获取 `cookies.txt` ，请使用相应的浏览器插件: [ [Chrome](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid) ] [ [Firefox](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) ]
 
-To check the available quality use `-F`
+### 手动选择质量
+
+除了使用以上配置，程序同样提供了手动选择质量的选项。
+
+首先使用 `-F` 检查可用质量
 
 ```bash
 youtube-dl -F "link"
 ```
 
-It will return a list like this
+执行后会返回如下信息
 
 ![result](./youtube-dl-0001.jpg)
 
-To download the specific quality use `-f "video"+"audio"`
+随后通过添加 `-f "video"+"audio"` 选取对应质量，例如
 
 ```bash
 youtube-dl -f 303+251 "link"
 ```
 
-### General .m3u8 streams
+### 抽取 .m3u8 链接
 
-The usage is basically the same but it will require some steps to extract the link.
+尽管使用方法大致相同，但是抽取步骤会比较复杂。
 
-Link extraction will be introduced [HERE](/docs/download/m3u8.md)
+链接抽取教程将在 [这一章节](/docs/download/m3u8.md) 中进行介绍。

@@ -1,4 +1,4 @@
-# Introduction
+# 简介
 
 <p style="text-align:center; font-style:italic">
     <a href="https://www.youtube.com/channel/UC5CwaMl1eIgY8h02uZw7u8A" target="_blank" rel="noopener noreferrer"><img src="/cover.png" width="100rem" height="100rem" alt="comet"></a>
@@ -6,19 +6,20 @@
     Treasure every moment of our dear comet
 </p>
 
-## What is this?
+## 本站目的
 
-This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.
+为星咏者提供一份存档指南供参考。
 
-## Changelog
+## 更新记录
 
-2021/09/15
+2021/09/19
 
-- Revised and reconstructed with VuePress
-- Add multi language
-
+- 增加多语言
 
 ::: details Earlier Changelogs
+
+2021/09/15
+- Revised and reconstructed with VuePress
 
 2021/09/14
 - Re-written and delopyed to Vercel
@@ -29,7 +30,7 @@ This is a brief archiving guide written for Hoshiyomis to archive every stream o
 
 :::
 
-## Disclaimer
+## 免责声明
 
 1. This Guide was a personal, non-commercial project, written under the **CC BY-NC-SA 4.0** license, please confirm the guidelines before reposting.
 2. This Guide does not provide any tool or script to grab DRM protected content.
@@ -41,10 +42,10 @@ This is a brief archiving guide written for Hoshiyomis to archive every stream o
 8. This Guide does not support uploading content available only behind pay-walls. This includes Member-only videos, Paid Lives, Songs, Albums, etc.
 9. The Guide does not and will not deal with issues caused by unexpected content distribution by other parties.
 
-## Credit
+## 制作
 
-Site created using [VuePress](https://vuepress.vuejs.org/)
+站点框架 [VuePress](https://vuepress.vuejs.org/)
 
-Deployed on [Vercel](http://vercel.com/)
+部署于 [Vercel](http://vercel.com/)
 
-Search (will be) provided by [DocSearch](https://docsearch.algolia.com/)
+搜索（即将）提供 [DocSearch](https://docsearch.algolia.com/)

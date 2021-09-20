@@ -94,13 +94,13 @@ module.exports = {
     '/zh/': {
       lang: 'zh-CN',
       title: "Suisei Archive Guide",
-      description: "This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.",
+      description: "为星咏者们书写的存档指南。",
     },
-    //'/zh-tw/': {
-    //  lang: 'zh-TW',
-    //  title: "Suisei Archive Guide",
-    //  description: "This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.",
-    //},
+    '/zh-tw/': {
+      lang: 'zh-TW',
+      title: "Suisei Archive Guide",
+      description: "为星咏者们书写的存档指南。", // 修改为繁中
+    },
   },
   themeConfig: {
     logo: '/ringo.png',
@@ -216,6 +216,61 @@ module.exports = {
         selectLanguageText: '选择语言',
         selectLanguageName: '简体中文',
         selectLanguageAriaLabel: '选择语言',
+      },
+      '/zh-tw/': {
+        navbar: [
+          {
+            text: "准备工作", // 修改为繁中
+            link: "/zh-tw/preparation/",
+          },
+          {
+            text: "常用工具", // 修改为繁中
+            link: "/zh-tw/tools/",
+            children: [
+              "/zh-tw/tools/youtube/",
+              "/zh-tw/tools/minyami/",
+              "/zh-tw/tools/kkr/",
+              "/zh-tw/tools/radigo/",
+              "/zh-tw/tools/rget/",
+              "/zh-tw/tools/m3u8/",
+            ],
+          },
+          {
+            text: "存储管理", // 修改为繁中
+            link: "/zh-tw/storage/",
+            children: [
+              "/zh-tw/storage/rclone/",
+            ],
+          },
+        ],
+        sidebar: {
+          "/zh-tw/": [""],
+          "/zh-tw/tools/": [
+            {
+              text: "常用工具", // 修改为繁中
+              children: [
+                "/zh/tools/youtube/",
+                "/zh/tools/minyami/",
+                "/zh/tools/kkr/",
+                "/zh/tools/radigo/",
+                "/zh/tools/rget/",
+                "/zh/tools/m3u8/",
+              ],
+            }
+          ],
+          "/zh-tw/preparation/": ["/zh/preparation/"],
+          "/zh-tw/storage/": [
+            {
+              text: "存储管理", // 修改为繁中
+              children: [
+                "/zh-tw/storage/rclone/"
+              ]
+            }
+          ],
+        },
+        selectLanguageText: '选择语言', // 修改为繁中
+        selectLanguageName: '繁体中文', // 修改为繁中
+        selectLanguageAriaLabel: '选择语言', // 修改为繁中
       },
     },
   }

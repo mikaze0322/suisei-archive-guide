@@ -4,6 +4,8 @@
 
 This is the project mainly focused on YouTube live stream recording, especially useful for an unarchived stream.
 
+Since `youtube-dl` doesn't perform well on live recording, I suggest using this tool as an alternative.
+
 ## Target Site
 
 - YouTube

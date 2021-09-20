@@ -6,11 +6,13 @@ This will be the primary tool to download youtube-dl videos, as well as the gene
 
 If you are using `yt-dlp` (and I recommend using it most of the time), just replace all `youtube-dl` with `yt-dlp` .
 
-The workflow of youtube-dl / yt-dlp:
+::: tip Workflow
 
-> Downloaded video and audio → Merged .mp4 file → Write metadata → Write thumbnail
+Downloaded video and audio → Merged .mp4 file → Write metadata → Write thumbnail
 
-## Target Site
+:::
+
+## 适用站点
 
 - YouTube
 - TVer

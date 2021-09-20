@@ -4,12 +4,12 @@
 
 This is a tool mainly focued on nicolive timeshift ( stream archive ) and AbemaTV downloading.
 
-## Target Site 
+## 适用站点 
 
 - Nico Live ( timeshift only )
 - AbemaTV
 
-## Installation
+## 安装
 
 ### Windows
 
@@ -33,7 +33,7 @@ npm i -g minyami
 
 Chrome extension Link [Here](https://chrome.google.com/webstore/detail/minyami/cgejkofhdaffiifhcohjdbbheldkiaed) .
 
-## Usage
+## 使用
 
 Open a nicolive timeshift link and click the plugin to extract the command you will need for download.
 

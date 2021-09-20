@@ -2,34 +2,36 @@
 
 [ [kkr](https://github.com/Last-Order/kkr) ]
 
-This is the project mainly focused on YouTube live stream recording, especially useful for an unarchived stream.
+这是一个主要针对 YouTube 直播实时录制的工具，对于无存档直播尤为有效。
 
-## Target Site
+鉴于 `youtube-dl` 在实时录制直播方面表现并不尽如人意，故推荐这一工具。
+
+## 适用站点
 
 - YouTube
 
-## Installation
+## 安装
 
 ### Windows
 
-Check [Node.js official site](https://nodejs.org/) and download the `LTS` version.
+打开 [Node.js 官方网站](https://nodejs.org/) 并下载 `LTS` 版本。
 
-To check if installation is successful, type `npm version` to see if it returns value.
+输入 `npm version` 检查是否安装成功。
 
 ### Ubuntu
 
-See [Preparations](/docs/preparation/ubuntu?id=nodejs) to install `npm` and `node.js` environment.
+阅读 [Ubuntu 环境准备](/docs/preparation/ubuntu?id=nodejs) 一节，安装 `npm` 以及 Node.js 。
 
-Once done with installation, install by `npm`
+安装成功后，输入以下命令安装 `kkr`
 
 ```bash
 npm i -g kkr
 ```
 
-## Usage
+## 使用
 
 ```bash
 kkr -d "<youtube link>" --live
 ```
 
-It also supports stream pre-scheduling, which means you can start the recording session before the stream starts and it will automatically start recording when the stream begins.
+`kkr` 还支持开播检测，因此在开播前即可启动命令，在开播后程序会自动开始录制。

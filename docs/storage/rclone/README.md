@@ -34,6 +34,8 @@ The configuration part is extremely complicated so I won't write it here, just f
 - For OneDirve click [HERE](https://rclone.org/onedrive/)
 - For Google Drive clike [HERE](https://rclone.org/drive/)
 
+To avoid the problems caused by official API ( interruption, unexpected failure, throttling etc. ) , a private Azure API is preferred.
+
 ## Usage
 
 Once you are done with the configuration, you can start uploading to or downloading from the remote.

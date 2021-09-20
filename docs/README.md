@@ -15,6 +15,8 @@ This is a brief archiving guide written for Hoshiyomis to archive every stream o
 2021/09/15
 
 - Revised and reconstructed with VuePress
+- Add multi language
+
 
 ::: details Earlier Changelogs
 

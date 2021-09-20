@@ -269,7 +269,7 @@ module.exports = {
           ],
         },
         selectLanguageText: '选择语言', // 修改为繁中
-        selectLanguageName: '简体中文', // 修改为繁中
+        selectLanguageName: '繁体中文', // 修改为繁中
         selectLanguageAriaLabel: '选择语言', // 修改为繁中
       },
     },

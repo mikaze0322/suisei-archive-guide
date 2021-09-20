@@ -29,7 +29,7 @@ Make sure the actual extracted link looks like cam_v1_.m3u8, or it might not con
 
 ![cookies](./m3u8-0002.jpg)
 
-Make sure you have the `Get cookies.txt` extension installed on your browser (link above). Now click on the plugin icon, and click `Export` . You can save the `cookies.txt` file anywhere you like.
+Make sure you have the `Get cookies.txt` extension installed on your browser and logged into the website. Now click on the plugin icon, and click `Export` . You can save the `cookies.txt` file anywhere you like.
 
 ## Download
 

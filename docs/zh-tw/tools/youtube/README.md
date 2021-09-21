@@ -103,11 +103,11 @@ Ubuntu 环境下，配置文件位于 `/etc/youtube-dl.conf` 。
 
 :::
 
-如需要默认拉取这一格式组合，可以添加 `--format (bestvideo[vcodec=vp9]/bestvideo)+(bestaudio[acodec=opus]/bestaudio)bestvideo+bestaudio/best/mp4`
+如需要默认拉取这一格式组合，可以添加 `--format (bestvideo[vcodec=vp9]/bestvideo)+(bestaudio[acodec=opus]/bestaudio)/best/mp4`
 
 这样在拉取这一组合的同时将其他格式列入备选，防止报错。
 
-如果要获取 `cookies.txt` ，请使用相应的浏览器插件: [ [Chrome](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid) ] [ [Firefox](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) ]
+如果要获取 `cookies.txt` ，请使用相应的浏览器插件 [ [Chrome](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid) ] [ [Firefox](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) ]
 
 ### 手动选择质量
 

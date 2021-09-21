@@ -91,11 +91,11 @@ Adding `--cookies cookies.txt` option helps downloading the member-only contents
 
 :::tip
 
-You can also use `--format (bestvideo[vcodec=vp9]/bestvideo)+(bestaudio[acodec=opus]/bestaudio)bestvideo+bestaudio/best/mp4` to prefer `vp9` + `opus` while also enable other formats as a fallback.
+You can also use `--format (bestvideo[vcodec=vp9]/bestvideo)+(bestaudio[acodec=opus]/bestaudio)/best/mp4` to prefer `vp9` + `opus` while also enable other formats as a fallback.
 
 :::
 
-Use this plugin to get a `cookies.txt` : [ [Chrome](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid) ] [ [Firefox](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) ]
+Use this plugin to get a `cookies.txt` [ [Chrome](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid) ] [ [Firefox](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) ]
 
 ### Manual Quality Select
 

@@ -2,27 +2,27 @@
 
 [ [kkr](https://github.com/Last-Order/kkr) ]
 
-这是一个主要针对 YouTube 直播实时录制的工具，对于无存档直播尤为有效。
+這是一個主要針對 YouTube 直播即時錄製的工具，對不留檔直播特攻。
 
-鉴于 `youtube-dl` 在实时录制直播方面表现并不尽如人意，故推荐这一工具。
+有鑑於 `youtube-dl` 無法支援即時錄製，故使用此法。
 
-## 适用站点
+## 適用網站
 
 - YouTube
 
-## 安装
+## 安裝
 
 ### Windows
 
-打开 [Node.js 官方网站](https://nodejs.org/) 并下载 `LTS` 版本。
+打開 [Node.js 官方網站](https://nodejs.org/) 並下載 `LTS` 版本。
 
-输入 `npm version` 检查是否安装成功。
+輸入 `npm version` 檢查是否安裝成功。
 
 ### Ubuntu
 
-阅读 [Ubuntu 环境准备](/docs/preparation/ubuntu?id=nodejs) 一节，安装 `npm` 以及 Node.js 。
+閱讀 [Ubuntu 環境準備](/docs/preparation/ubuntu?id=nodejs) ，安裝 `npm` 以及 Node.js 。
 
-安装成功后，输入以下命令安装 `kkr`
+安裝成功後，輸入以下命令安裝 `kkr`
 
 ```bash
 npm i -g kkr
@@ -34,4 +34,4 @@ npm i -g kkr
 kkr -d "<youtube link>" --live
 ```
 
-`kkr` 还支持开播检测，因此在开播前即可启动命令，在开播后程序会自动开始录制。
+`kkr` 還支持開播通知，因此在開播前即可啟動命令，在開播後程序會自動開始錄製。

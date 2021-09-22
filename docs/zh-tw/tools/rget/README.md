@@ -2,30 +2,30 @@
 
 [ [rget](https://github.com/wasamas/rget) ]
 
-本工具主要面向电台录制，本指南主要将其用于 [Hibiki Radio Station](http://hibiki-radio.jp/) 的录制。
+本工具主要為電台錄製，本指南主要將其用於 [Hibiki Radio Station](http://hibiki-radio.jp/) 的錄製。
 
-Hibiki Radio Station 采用了加密 .m3u8 对电台进行串流，因此无法使用常规方式对其进行直接下载。
+Hibiki Radio Station 採用了加密 .m3u8 對電台進行串流，因此無法使用正常方法直接下載。
 
-## 适用站点
+## 適用網站
 
 - Hibiki Radio Station
 - etc.
 
-## 安装
+## 安裝
 
 ### Windows
 
-打开 [Ruby 官方网站](https://rubyinstaller.org/) 下载安装包并安装。
+打開 [Ruby 官方網站](https://rubyinstaller.org/) 下載安裝包並安裝。
 
 ### Ubuntu
 
-首先安装 `ruby-full` 
+首先安裝 `ruby-full` 
 
 ```bash
 sudo apt install ruby-full
 ```
 
-随后通过 `gem` 包管理器安装 `rget`
+再透過 `gem` 包管理器安裝 `rget`
 
 ```bash
 sudo gem install rget
@@ -35,26 +35,26 @@ sudo gem install rget
 
 ::: warning 注意
 
-本程序尽管提供 Windows 版本，但是本指南在书写并测试时遇到了问题。
+本程序僅提供 Windows 版本，但是本指南在書寫並測試時遇到了問題。
 
-推荐使用 Linux / Ubuntu 环境运行。
+推薦使用 Linux / Ubuntu 環境運行。
 
 :::
 
-举个例子，例如我们需要下载 RAS 的电台节目，添加电台的方式如下
+舉個例子，例如我們需要下載 RAS 的電台節目，添加電台的方式如下：
 
 ```bash
 # save a template of the radio program config
 rget yaml https://hibiki-radio.jp/description/ras/detail >> ~/.rget
 ```
 
-此处 `ras` 是如上链接中电台代码。
+此處 `ras` 是如上連結中電台代碼。
 
-随后输入如下命令进行下载
+再輸入如下指令進行下載
 
 ::: tip
 
-默认下载格式是 `.mp3` ，可以添加 `--no-mp3` 来输出 `.ts` 格式。
+默認下載格式是 `.mp3` ，可以添加 `--no-mp3` 來輸出 `.ts` 格式。
 
 :::
 
@@ -62,6 +62,6 @@ rget yaml https://hibiki-radio.jp/description/ras/detail >> ~/.rget
 rget ras --no-mp3
 ```
 
-如需下载其他电台，请将 `ras` 替换为其他电台代码。
+如需下載其他電台，請將 `ras` 替換為其他電台代碼。
 
-如果 `rget` 持续报与 `path` 相关的错误，请手动编辑 `~/.rget` 并指定 `path: .` 或其他本地路径。
+如果 `rget` 持續報與 `path` 相關的錯誤，請手動編輯 `~/.rget` 並指定 `path: .` 或其他本機路徑。

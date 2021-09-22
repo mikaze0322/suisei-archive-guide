@@ -1,49 +1,49 @@
 # 通用 .m3u8
 
-尽管很多站点并没有被 youtube-dl / yt-dlp 正式支持，但实际上我们只需要获取直播串流的 `.m3u8` 链接即可下载。
+儘管很多網站沒有被 youtube-dl / yt-dlp 正式支持，但實際上只要有直播串流的 `.m3u8` 連結即可下載。
 
-## 适用站点
+## 適用網站
 
 - SPWN
 - Nissin
 - ...
 - etc.
 
-## 获取链接
+## 獲取連結
 
 ![step](./m3u8-0001.jpg)
 
-打开直播页面，点击 F12 打开浏览器的开发模式。随后点击<span style="color:#e93320; font-weight:bold">红色</span>箭头指向的 网络 选项卡。
+打開直播頁面，點擊 F12 打開瀏覽器的開發模式。隨後點擊<span style="color:#e93320; font-weight:bold">紅色</span>箭頭指向的 網路 頁籤。
 
-在<span style="color:#59ac59; font-weight:bold">绿色</span>箭头指向的 过滤器 中输入 m3u8 ，随后**刷新一次页面**。
+在<span style="color:#59ac59; font-weight:bold">綠色</span>箭頭指向的 過濾器 中輸入 m3u8 ，隨後**刷新一次頁面**。
 
-此时应该可以看到一些 m3u8 链接被筛选出来了。
+此時應該可以看到一些 m3u8 連結被篩選出来了。
 
-因为每个人所使用的网络环境不同，默认串流质量不尽相同。为了确保可以获取最高画质，我们提取 main m3u8 index 以获取所有串流质量选项。
+因為每個人的網路環境不同，默認串流品質不盡相同。為了確保可以獲取最高畫質，我們提取 main m3u8 index 以獲取所有串流品質選項。
 
-右键点击<span style="color:#43a2e3; font-weight:bold">蓝色</span>箭头指向的条目，选择复制 > 复制URL。
+右鍵點擊<span style="color:#43a2e3; font-weight:bold">藍色</span>剪頭指向的條目，選擇複製 > 複製URL。
 
-::: warning 建议
+::: warning 建議
 
-确保您获取的是 index 而非某一特定质量的串流链接。有时这些特定质量的链接不包含音频流。
+確保您獲取的是 index 而非某一特定品質的串流連結。有時這些特定品質的連結不包含音頻流。
 
 :::
 
-## 获取 cookies.txt
+## 獲取 cookies.txt
 
 ![cookies](./m3u8-0002.jpg)
 
-由于 SPWN 等站点提供的是付费节目，需要对用户进行鉴权。因为需要获取 `cookies.txt` 以通过验证。
+由於 SPWN 等網站提供的是付費節目，需要對用戶進行鑒定權限。因此需要獲取 `cookies.txt` 已通過驗證。
 
-此处用到的是 `Get cookies.txt` 插件 [ [Chrome](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid) ] [ [Firefox](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) ]
+此處用到的是 `Get cookies.txt` 插件 [ [Chrome](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid) ] [ [Firefox](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) ]
 
-安装完毕插件后，确保您已登录网站，并点击插件图标。在弹出对话框中选择 Export ，浏览器会自动保存 `cookies.txt` 至本地。
+安裝插件後，確保您已登陸網站，並點擊插件圖標。在彈出對話框中選擇 Export ，瀏覽器會自動保存 `cookies.txt` 至本機。
 
-## 下载
+## 下載
 
-此处已经获取 `.m3u8` 链接以及 `cookies.txt` ， 可以使用 youtube-dl / yt-dlp 下载影片了。
+此處已經獲取 `.m3u8` 連結以及 `cookies.txt` ， 可以使用 youtube-dl / yt-dlp 下載影片了。
 
-下载命令如下，将引号内容替换为对应信息
+下載指令如下，將引號內容換成對應訊息。
 
 Use this template to download the video. Replace the stuff in `""` with the appropriate content you got from earlier
 
@@ -53,22 +53,22 @@ youtube-dl ".m3u8 link" --cookies "path to cookies.txt" -o "local saving path"
 
 ![downloadlink](./m3u8-0003.jpg)
 
-现在可以开始下载了。
+現在可以開始下載了。
 
-## 手动选择质量
+## 手動選擇品質
 
-由于 SPWN 等站点的串流命名不规范，所以仅使用 `best` 或 `bestaudio+bestvideo` 并不能很好确保拉取到最佳质量的串流。
+由於 SPWN 等網站的串流命名不規範，所以僅使用 `best` 或 `bestaudio+bestvideo` 並不能很好確保拉取到最佳品質的串流。
 
-建议在下载前添加 `-F` 选项以检查可获取的编码格式 / 质量。
+建議在下載前添加 `-F` 選項以檢查可獲取的編碼格式 / 品質。
 
 ![format](./m3u8-0004.jpg)
 
-同上所示，添加 `-F` 后程序列出了可选的所有格式。
+同上所示，添加 `-F` 後程序列出了可選的所有格式。
 
-此处输入 `-f 5279+program_audio-Fine` 以拉取最高质量的视频及音频串流。
+此處輸入 `-f 5279+program_audio-Fine` 以拉取最高品質的視頻及音頻串流。
 
 ```bash
 youtube-dl -f 5279+program_audio-Fine ".m3u8 address"
 ```
 
-现在我们可以下载最高质量的影片了。
+現在我們可以下載最高品質的影片了。

@@ -2,52 +2,52 @@
 
 [ [radigo](https://github.com/yyoshiki41/radigo) ]
 
-本项目仅用于拉取 [radiko.jp](https://radiko.jp) 的电台存档。
+本項目僅用於抓取 [radiko.jp](https://radiko.jp) 的電台存檔。
 
-## 适用站点
+## 適用網站
 
 - Radiko.jp
 
-## 安装
+## 安裝
 
 ### Windows
 
-阅读 [Windows 环境准备](/docs/preparation/windows.md) 一节，并从[官方源](https://github.com/yyoshiki41/radigo/releases/)下载 `radigo.exe` 并把它放入 `$PATH` 文件夹。
+閱讀 [Windows 環境準備](/docs/preparation/windows.md) ，並從[官方源](https://github.com/yyoshiki41/radigo/releases/)下載 `radigo.exe` 並把它放入 `$PATH` 文件夾。
 
 ### Ubuntu
 
-从[官方源](https://github.com/yyoshiki41/radigo/releases/)下载对应版本并执行如下命令
+從[官方源](https://github.com/yyoshiki41/radigo/releases/)下載對應版本並執行如下命令
 
 ```bash
 mv /usr/local/bin/radigo
 sudo chmod a+rx /usr/local/bin/radigo
 ```
 
-输入 `radigo` 来验证安装是否成功。
+輸入 `radigo` 來驗證是否成功。
 
 ## 使用
 
-### 常规节目
+### 常規節目
 
-radiko 会根据 IP 所在地决定可用的电台节目。
+radiko 會根據 IP 所在地決定可看的電台節目。
 
-基本下载命令如下
+基本下載命令如下
 
 ```bash
 radigo rec -a="area ID" -id="program ID" -s="timestamp"
 ```
 
-`area ID` 可以从页面底部找到。
+`area ID` 可以從頁面底部找到。
 
 ![footer](./radigo-0001.jpg)
 
-点开后可以发现类似这样的一个链接，如 `JP13` 是东京的 `area ID` 。
+點開後可以發現類似這樣的連結，如 `JP13` 是東京的 `area ID` 。
 
 ```bash
 https://radiko.jp/index/JP13
 ```
 
-`program ID` 和 `timestamp` 则是从对应存档的链接中找到。
+`program ID` 和 `timestamp` 則是從對應存檔的連結中找到。
 
 ```
 https://radiko.jp/#!/ts/QRR/20210914175500
@@ -57,23 +57,23 @@ https://radiko.jp/#!/ts/QRR/20210914175500
 
 `timestamp` = 20210914175500
 
-### 高级订阅
+### 高級訂閱
 
-部分节目归属于其他地区， radiko 要求用户订阅高级账户，方可收听这些区域外电台的存档。
+部分節目歸屬於其他地區， radiko 要求使用者訂閱高級帳號，才能收聽這些區域外電台的存檔。
 
-第一步自然是注册并通过信用卡支付高级订阅费用。
+第一步．註冊並通過信用卡支付高級訂閱費用。
 
-如果您在使用 Ubuntu ，那么请执行如下命令
+如果您在使用 Ubuntu ，那麼請執行如下指令：
 
 ```bash
 export RADIKO_MAIL="radigo@example.com" && export RADIKO_PASSWORD="password"
 radigo rec -a="area ID" -id="program ID" -s="timestamp"
 ```
 
-您也可以将登录信息写入 `~/.zshrc` 或 `~/.bashrc` 。
+您也可以將登錄訊息輸入 `~/.zshrc` 或 `~/.bashrc` 。
 
 ## 注意
 
-Radiko 仅面向日本本土服务，您至少需要一个日本 IP 来获取下载所需的相关信息。
+Radiko 僅對日本服務，您至少需要一个日本 IP 来獲取下載所需的相關信息。
 
-您的 IP 所在地会影响您可以收听 / 下载的内容。例如：我的服务器 IP 被划归至东京，那么我的服务器在没有高级订阅的情况下，仅可接收到默认分配给东京的节目。
+您的 IP 所在地會影響您可以收聽 / 下載的内容。例如：我的伺服器 IP 被規劃至東京，那麼我的伺服器在沒有高級訂閱的情况下，僅可接收到默認分配给東京的節目。

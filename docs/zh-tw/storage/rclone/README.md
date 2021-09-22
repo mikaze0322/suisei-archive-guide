@@ -2,9 +2,9 @@
 
 [ [rclone](https://rclone.org/) ]
 
-rclone 尽管配置复杂，但是本工具是目前最为通用的云端-本地存储同步的管理方案。
+rclone 雖然配置稍微複雜，但是本工具是目前最為通用的雲端-本機存儲同步的管理方案。
 
-## 适用站点
+## 適用網站
 
 - OneDrive
 - Google Drive
@@ -17,38 +17,38 @@ rclone 尽管配置复杂，但是本工具是目前最为通用的云端-本地
 
 ### Windows
 
-阅读 [Windows 环境准备](/docs/preparation/windows.md)，并从[官方源](https://rclone.org/downloads/)下载 `rclone.exe` 并放入 `$PATH` 文件夹。
+閱讀 [Windows 環境準備](/docs/preparation/windows.md)，並從[官方源](https://rclone.org/downloads/)下載 `rclone.exe` 並放入 `$PATH` 資料夾。
 
 ### Ubuntu
 
-在 Linux 环境（包括 Ubuntu 及 macOS ），可以通过一键脚本安装 `rclone`
+在 Linux 環境（包括 Ubuntu 及 macOS ），可以通過一鍵腳本安裝 `rclone`
 
 ```bash
 curl https://rclone.org/install.sh | sudo bash
 ```
 
-## 设置
+## 設置
 
-rclone 的设置非常复杂，本指南对此不作赘述，建议参考官方文档进行相应设置。
+rclone 的設置非常複雜，本指南不多贅述，建議看官方文檔進行設置。
 
-- OneDrive [官方文档](https://rclone.org/onedrive/)
-- Google Drive [官方文档](https://rclone.org/drive/)
+- OneDrive [官方文檔](https://rclone.org/onedrive/)
+- Google Drive [官方文檔](https://rclone.org/drive/)
 
-为避免拥堵、断流等问题，建议自建私有 Azure API 后进行使用。自建参考 [这篇文章](https://p3terx.com/archives/rclone-connect-onedrive-with-selfbuilt-api.html) 。
+為了避免通道擁擠、斷線等問題，建議自己設定私有 Azure API 後進行使用。参考 [這篇文章](https://p3terx.com/archives/rclone-connect-onedrive-with-selfbuilt-api.html) 。
 
 ## 使用
 
-此处假定已经设置完毕，可以开始下载 / 上传文件。
+假定設定玩閉沒問題，可以開始下載 / 上傳文件。
 
-本指南使用的是 OneDrive ，以下均以 OneDrive 的相关选项作为例子。
+本指南使用的是 OneDrive ，以下均以 OneDrive 的相關選項作為例子。
 
-下载
+下載
 
 ```bash
 rclone copy -P "remote drive":"remote folder" "local folder"
 ```
 
-上传
+上傳
 
 ```bash
 rclone copy -P "local folder" "remote drive":"remote folder"
@@ -56,18 +56,18 @@ rclone copy -P "local folder" "remote drive":"remote folder"
 
 ![Result](./rclone-0001.jpg)
 
-`copy` ： Copy 模式会在开始前检查所有文件，并根据相应特征跳过已经下载完毕的文件。
+`copy` ： Copy 此模式會在開始前檢查所有文件，並根據相應特徵跳過已下載完畢的文件。
 
-`-P` ：本选项会让 rclone 显示进度。默认情况下 rclone 不返回任何信息。
+`-P` ：本選項會讓 rclone 顯示進度。默認情况下 rclone 不回應任何信息。
 
-::: tip 建议
+::: tip 建議
 
-此处建议添加 `--onedrive-encoding "Slash"` 选项。
+此處建議添加 `--onedrive-encoding "Slash"` 選項。
 
-本选项规定下载 OneDrive 内文件时，仅对含 `/` 的文件进行重命名处理。
+本選項規定下載 OneDrive 内文件时，僅對含 `/` 的文件進行重新命名處理。
 
-如此设置之后 rclone 便不会对 `#` 等已被 OneDrive 和本地文件系统支持的特殊字符进行处理。
+如此設置之後 rclone 便不会對 `#` 等已被 OneDrive 和本機文件系統支持的特殊字符進行處理。
 
 :::
 
-其余站点的设置以及特殊设置请参考官方文档。
+其餘雲端設置以及特殊設置請參考官方文檔。

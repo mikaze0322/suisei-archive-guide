@@ -1,4 +1,4 @@
-# 简介
+# 簡介
 
 <p style="text-align:center; font-style:italic">
     <a href="https://www.youtube.com/channel/UC5CwaMl1eIgY8h02uZw7u8A" target="_blank" rel="noopener noreferrer"><img src="/cover.png" width="100rem" height="100rem" alt="comet"></a>
@@ -8,13 +8,13 @@
 
 ## 本站目的
 
-为星咏者提供一份存档指南供参考。
+為星詠者提供一份存檔指南僅供參考。
 
-## 更新记录
+## 更新紀錄
 
 2021/09/19
 
-- 增加多语言
+- 增加多語言
 
 ::: details Earlier Changelogs
 
@@ -30,7 +30,7 @@
 
 :::
 
-## 免责声明
+## 免責申明
 
 1. This Guide was a personal, non-commercial project, written under the **CC BY-NC-SA 4.0** license, please confirm the guidelines before reposting.
 2. This Guide does not provide any tool or script to grab DRM protected content.
@@ -42,10 +42,10 @@
 8. This Guide does not support uploading content available only behind pay-walls. This includes Member-only videos, Paid Lives, Songs, Albums, etc.
 9. The Guide does not and will not deal with issues caused by unexpected content distribution by other parties.
 
-## 制作
+## 製作
 
-站点框架 [VuePress](https://vuepress.vuejs.org/)
+網站框架 [VuePress](https://vuepress.vuejs.org/)
 
-部署于 [Vercel](http://vercel.com/)
+部署於 [Vercel](http://vercel.com/)
 
-搜索（即将）提供 [DocSearch](https://docsearch.algolia.com/)
+搜尋（即將）提供 [DocSearch](https://docsearch.algolia.com/)

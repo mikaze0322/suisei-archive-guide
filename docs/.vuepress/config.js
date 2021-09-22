@@ -220,7 +220,7 @@ module.exports = {
       '/zh-tw/': {
         navbar: [
           {
-            text: "准备工作", // 修改为繁中
+            text: "準備工作", // 修改为繁中
             link: "/zh-tw/preparation/",
           },
           {
@@ -236,7 +236,7 @@ module.exports = {
             ],
           },
           {
-            text: "存储管理", // 修改为繁中
+            text: "儲存管理", // 修改为繁中
             link: "/zh-tw/storage/",
             children: [
               "/zh-tw/storage/rclone/",
@@ -249,28 +249,28 @@ module.exports = {
             {
               text: "常用工具", // 修改为繁中
               children: [
-                "/zh/tools/youtube/",
-                "/zh/tools/minyami/",
-                "/zh/tools/kkr/",
-                "/zh/tools/radigo/",
-                "/zh/tools/rget/",
-                "/zh/tools/m3u8/",
+                "/zh-tw/tools/youtube/",
+                "/zh-tw/tools/minyami/",
+                "/zh-tw/tools/kkr/",
+                "/zh-tw/tools/radigo/",
+                "/zh-tw/tools/rget/",
+                "/zh-tw/tools/m3u8/",
               ],
             }
           ],
-          "/zh-tw/preparation/": ["/zh/preparation/"],
+          "/zh-tw/preparation/": ["/zh-tw/preparation/"],
           "/zh-tw/storage/": [
             {
-              text: "存储管理", // 修改为繁中
+              text: "儲存管理", // 修改为繁中
               children: [
                 "/zh-tw/storage/rclone/"
               ]
             }
           ],
         },
-        selectLanguageText: '选择语言', // 修改为繁中
-        selectLanguageName: '繁体中文', // 修改为繁中
-        selectLanguageAriaLabel: '选择语言', // 修改为繁中
+        selectLanguageText: '選擇語言', // 修改为繁中
+        selectLanguageName: '繁體中文', // 修改为繁中
+        selectLanguageAriaLabel: '選擇語言', // 修改为繁中
       },
     },
   }

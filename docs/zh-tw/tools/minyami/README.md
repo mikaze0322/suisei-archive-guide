@@ -2,57 +2,57 @@
 
 [ [minyami](https://github.com/Last-Order/Minyami) ]
 
-本工具主要用于 Niconico Timeshift （直播存档），以及 AbemaTV 影片的下载。
+本工具主要用於 Niconico Timeshift （直播存檔），以及 AbemaTV 影片的下載。
 
-## 适用站点 
+## 適用網站
 
-- Nico 直播 ( 仅直播部分 )
+- Nico 直播 ( 僅直播部分 )
 - AbemaTV
 
-## 安装
+## 安裝
 
 ### Windows
 
-打开 [Node.js 官方网站](https://nodejs.org/) 并下载 `LTS` 版本。
+打開 [Node.js 官方网站](https://nodejs.org/) 並下載 `LTS` 版本。
 
-输入 `npm version` 检查是否安装成功。
+輸入 `npm version` 檢查是否安裝成功。
 
 ### Ubuntu
 
-阅读 [Ubuntu 环境准备](/docs/preparation/ubuntu?id=nodejs) 一节，安装 `npm` 以及 Node.js 。
+閱讀 [Ubuntu 環境準備](/docs/preparation/ubuntu?id=nodejs) ，安裝 `npm` 以及 Node.js 。
 
-安装成功后，输入以下命令安装 `minyami`
+安裝成功後，輸入以下指令安裝 `minyami`
 
 ```bash
 npm i -g minyami
 ```
 
-### 浏览器插件
+### 瀏覽器插件
 
-`minyami` 需要配合浏览器插件生成下载所需要的命令。
+`minyami` 需要配合瀏覽器插件生成下載所需要的指令。
 
-Chrome 插件点击 [这里](https://chrome.google.com/webstore/detail/minyami/cgejkofhdaffiifhcohjdbbheldkiaed) 进行下载及安装。
+Chrome 插件點擊 [這裡](https://chrome.google.com/webstore/detail/minyami/cgejkofhdaffiifhcohjdbbheldkiaed) 進行下載及安裝。
 
 ## 使用
 
-首先打开一个 Nico 直播的存档页面，随后点击插件，插件会自动生成下载所需的命令。
+首先打開一個 Nico 直播的存檔頁面，隨後點擊插件，插件會自動生成下載所需的指令。
 
 ![Plugin](./minyami-0001.jpg)
 
-点击复制，将命令粘贴并执行，即可开始下载。
+將指令複製貼上並執行，即可開始下載。
 
-AbemaTV 页面下载流程相同，不再赘述。
+AbemaTV 頁面下載流程相同，不再贅述。
 
 ## 注意
 
-要顺利下载 Nico 直播存档，你可能需要准备这些
+要順利下載 Nico 直播存檔，你可能需要準備這些
 
-- 高级会员（可选），这样在 Niconico 的繁忙时段也可以下载最高画质的影片。
+- 高級會員（可選），這樣在 Niconico 的繁忙時段也可以下載最高畫質的影片。
 
-- 频道会员（可选），部分直播需要频道会员订阅才可以观看（完整）存档。
+- 頻道會員（可選），部分直播需要頻道會員訂閱才可以觀看（完整）存檔。
 
-- 日本 IP（可选），部分节目锁区，仅供日本用户观赏，尤其是动画的上映会等。
+- 日本 IP（可選），部分節目鎖區，僅供日本用戶觀看，尤其是動畫的上映會等。
 
-有报告称 Niconico 屏蔽了部分机房 IP 地址。如果发现 `minyami` 持续报错，请尝试更换 IP 后再尝试
+有報告稱 Niconico 阻擋了部分機房 IP 地址。如果發現 `minyami` 持續報錯，請嘗試更換 IP 後再執行。
 
-如果有其他使用上的疑问，请阅读 Github 上的 `README.md` 获取更多信息。
+如果有其他使用上的疑問，請閱讀 Github 上的 `README.md` 獲取更多信息。

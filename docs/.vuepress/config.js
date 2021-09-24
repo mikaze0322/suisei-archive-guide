@@ -18,7 +18,7 @@ module.exports = {
       src: 'https://insight.suisei.cc/umami.js',  
       "data-cache": "true",
       "data-domains": "guide.suisei.cc",
-      "data-website-id": "759a60ac-94a0-464c-b611-f8c5a264fae1", 
+      "data-website-id": "f3c6359f-99d6-4d8c-b239-d3f2681423d9", 
     }],
   ],
   markdown: {

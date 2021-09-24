@@ -12,7 +12,14 @@ module.exports = {
     ['meta', { property: 'og:image', content: 'https://guide.suisei.cc/ringo.png' }],
     ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
     ['meta', { name: 'theme-color', content: '#bb4036' }],
-    ['script',{ async:true, defer:true, "data-website-id": "759a60ac-94a0-464c-b611-f8c5a264fae1", src: 'https://insight.suisei.cc/umami.js' }]
+    ['script',{ 
+      async: true, 
+      defer: true, 
+      src: 'https://insight.suisei.cc/umami.js',  
+      "data-cache": "true",
+      "data-domains": "guide.suisei.cc",
+      "data-website-id": "759a60ac-94a0-464c-b611-f8c5a264fae1", 
+    }],
   ],
   markdown: {
     lineNumbers: false // 代码块显示行号

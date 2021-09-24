@@ -15,10 +15,10 @@ module.exports = {
     ['script',{ 
       async: true, 
       defer: true, 
-      src: 'https://insight.suisei.cc/umami.js',  
+      src: 'https://analytics.suisei.cc/umami.js',  
       "data-cache": "true",
       "data-domains": "guide.suisei.cc",
-      "data-website-id": "f3c6359f-99d6-4d8c-b239-d3f2681423d9", 
+      "data-website-id": "e3011284-c53c-461e-84b3-ac5ddf6f0b82", 
     }],
   ],
   markdown: {

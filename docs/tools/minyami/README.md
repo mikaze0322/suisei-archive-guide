@@ -4,12 +4,12 @@
 
 This is a tool mainly focued on nicolive timeshift ( stream archive ) and AbemaTV downloading.
 
-## 适用站点 
+## Target Site
 
 - Nico Live ( timeshift only )
 - AbemaTV
 
-## 安装
+## Installation
 
 ### Windows
 

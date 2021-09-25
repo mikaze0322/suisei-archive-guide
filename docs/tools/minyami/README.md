@@ -33,7 +33,7 @@ npm i -g minyami
 
 Chrome extension Link [Here](https://chrome.google.com/webstore/detail/minyami/cgejkofhdaffiifhcohjdbbheldkiaed) .
 
-## 使用
+## Usage
 
 Open a nicolive timeshift link and click the plugin to extract the command you will need for download.
 

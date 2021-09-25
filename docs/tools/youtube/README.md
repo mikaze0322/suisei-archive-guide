@@ -12,7 +12,7 @@ Downloaded video and audio → Merged .mp4 file → Write metadata → Write thu
 
 :::
 
-## 适用站点
+## Target Site
 
 - YouTube
 - TVer
@@ -117,8 +117,61 @@ To download the specific quality use `-f "video"+"audio"`
 youtube-dl -f 303+251 "link"
 ```
 
-### General .m3u8 streams
+### General .m3u8 Streams
 
 The usage is basically the same but it will require some steps to extract the link.
 
 Link extraction will be introduced [HERE](/docs/download/m3u8.md)
+
+## Tips
+
+### No Archive Streams
+
+No archive YouTube streams would need a process to hide the archive manually after the stream, so there would be a time gap between this.
+
+If you are fast enough to start the download, YouTube won't break your connect as long your connections didn't break.
+
+This is the same behavior you can see on YouTube apps, also applies to those copyright striken archive.
+
+### Stream longer than 2 hours
+
+`youtube-dl` has a [known and unsolved bug](https://github.com/ytdl-org/youtube-dl/issues/26330) mentioning it can only pull the last 2 hours right after the stream ends.
+
+*e.g.* The stream is 3 hours long and YouTube would split it into [ 1 hour + 2 hour ] in the backend. So pulling the stream right after it ends would only be able to pull the last 2 hours half.
+
+Unfortunately `youtube-dl` still not have fixed the bug yet.
+
+So for those preannounced no archive streams, I suggest start the record using [kkr](/tools/kkr/) from the beginning in case the stream got longer than 2 hours.
+
+### Workaround
+
+::: danger Warning
+
+There is *the only* experimental workaround so far for `youtube-dl` .
+
+*Use only when you have no other ways.*
+
+:::
+
+In [issue#26330](https://github.com/ytdl-org/youtube-dl/issues/26330#issuecomment-803654248) , ehoogeveen-medweb provided a very experimental way to solve the problem by adding the missing segement number with a script.
+
+You will need to install Node.js environment first [ [Ubuntu](http://localhost:8081/preparation/#node-js) ] [ [Windows](http://localhost:8081/tools/kkr/#windows) ].
+
+Then download the provided `addMissingFragments.zip` and extract it in your working path.
+
+Run the command to extract the `video.info.json` first
+```bash
+youtube-dl --output video --skip-download --write-info-json "youtube-url"
+```
+
+Then execute the addMissingFragments.js to retrieve the missing data.
+```bash
+node addMissingFragments "video.info.json"
+```
+
+Last download all segement using this command
+```bash
+youtube-dl --load-info-json "video.info.json"
+```
+
+This should at least grab a complete archive, but also as mentioned by mmis1000 this is not even technically a *workaround*. The script requires Node.js plus it might not being able to provide the highest quality of the archive for some reason. But since this is *the only* working method out there, I decided to write it here but use at your own risk.

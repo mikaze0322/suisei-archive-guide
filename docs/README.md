@@ -41,10 +41,6 @@ This is a brief archiving guide written for Hoshiyomis to archive every stream o
 8. This Guide does not support uploading content available only behind pay-walls. This includes Member-only videos, Paid Lives, Songs, Albums, etc.
 9. The Guide does not and will not deal with issues caused by unexpected content distribution by other parties.
 
-## Credit
+## Support
 
-Site created using [VuePress](https://vuepress.vuejs.org/)
-
-Deployed on [Vercel](http://vercel.com/)
-
-Search (will be) provided by [DocSearch](https://docsearch.algolia.com/)
+If you found the guide useful, please consider [support the project](https://ko-fi.com/F1F46CGFC) !

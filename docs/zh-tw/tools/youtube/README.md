@@ -134,3 +134,54 @@ youtube-dl -f 303+251 "link"
 儘管使用方法大致相同，但是讀取步驟會比較複雜。
 
 連結抽取教學將在 [這個章節](/docs/download/m3u8.md) 中進行介紹。
+
+## 其他
+
+### 不留檔直播
+
+雖然被稱為不留檔直播，但實際上結束後仍需手動隱藏，在這短暫的時間可以啟用自動下載。
+
+而一旦啟動下載，那麼連結不會因為被隱藏而被打斷。YouTube App也是同樣設計的，因此這是一個可以利用的點。
+
+此外，遭到版權炮的影片也是同樣的情況。
+
+### 大於兩小時的直播存檔
+
+`youtube-dl` 有一個[已知且尚未被解決的問題](https://github.com/ytdl-org/youtube-dl/issues/26330)，也就是它在直播结束後一段時間内不能完整下載大於2小時的存檔。
+
+例如：直播有3小時長度，那麼 `youtube-dl` 在直播结束後的短時間内只能下載到後2小時，前1個小時是無法提取的。
+
+截至目前這個問題尚未被修復。
+
+所以對於已知不留檔且可能超過2小時的直播，建議使用 [kkr](/tools/kkr/) 提前開啟錄制。
+
+### 實驗性修復
+
+::: danger 警告
+
+以下修復為實驗性質，僅在必要情況下使用。
+
+:::
+
+在 [issue#26330](https://github.com/ytdl-org/youtube-dl/issues/26330#issuecomment-803654248) 中，使用者 ehoogeveen-medweb 提供了利用 Node.js 腳本提取缺失 segement id 的方法。
+
+首先需要安裝 Node.js 環境 [ [Ubuntu](http://localhost:8081/preparation/#node-js) ] [ [Windows](http://localhost:8081/tools/kkr/#windows) ] 。
+
+随後下載使用者提供的 `addMissingFragments.zip` 並放入工作路徑。
+
+完成後執行如下指令獲取 `video.info.json`
+```bash
+youtube-dl --output video --skip-download --write-info-json "youtube-url"
+```
+
+執行 addMissingFragments.js 以修復缺失的 segement id
+```bash
+node addMissingFragments "video.info.json"
+```
+
+最後執行如下指令進行完整下載
+```bash
+youtube-dl --load-info-json "video.info.json"
+```
+
+以上步驟可以保存一份完整的存檔，但是正如使用者 mmis1000 提到的，這並不是一个非常完善的修復方法。首先這個腳本等於是手動寫入缺失的 id ，還需要額外的 Node.js 環境執行，且有可能並未讀取最高畫質的存檔。但是這是目前**唯一可行**的修復，因此決定寫入本指南。

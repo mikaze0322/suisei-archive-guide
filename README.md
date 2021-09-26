@@ -21,6 +21,6 @@ This is also part of *Project Stargazer*.
 
 ## Support
 
-Please consider buy me a coffee or support the server!
+If you found the guide useful, please consider buy me a coffee or support the server!
 
 <a href='https://ko-fi.com/F1F46CGFC' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>

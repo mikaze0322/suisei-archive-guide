@@ -10,6 +10,10 @@
 
 This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.
 
+## Support
+
+If you found the guide useful, please consider [support the project](https://ko-fi.com/F1F46CGFC) !
+
 ## Changelog
 
 2021/09/15
@@ -40,7 +44,3 @@ This is a brief archiving guide written for Hoshiyomis to archive every stream o
 7. If you need materials to make a clip or introduction of Suisei, please be sure it's positive and won't damage her reputation.
 8. This Guide does not support uploading content available only behind pay-walls. This includes Member-only videos, Paid Lives, Songs, Albums, etc.
 9. The Guide does not and will not deal with issues caused by unexpected content distribution by other parties.
-
-## Support
-
-If you found the guide useful, please consider [support the project](https://ko-fi.com/F1F46CGFC) !

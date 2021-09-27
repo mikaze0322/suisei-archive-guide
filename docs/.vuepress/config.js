@@ -13,12 +13,9 @@ module.exports = {
     ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
     ['meta', { name: 'theme-color', content: '#bb4036' }],
     ['script',{ 
-      async: true, 
       defer: true, 
-      src: 'https://insight.suisei.cc/umami.js',  
-      "data-cache": "true",
-      "data-domains": "guide.suisei.cc",
-      "data-website-id": "2083a443-de78-42e6-b0e4-78f637797310", 
+      src: 'https://insight.suisei.cc/js/plausible.js',
+      "data-domain": "guide.suisei.cc",
     }],
   ],
   markdown: {

@@ -15,7 +15,7 @@ module.exports = {
     ['script',{ 
       async: true, 
       defer: true,   
-      src: 'https://insight.suisei.cc/see.js',
+      src: 'https://insight.suisei.cc/umami.js',
       "data-cache": "true",
       "data-domains": "guide.suisei.cc",
       "data-website-id": "2083a443-de78-42e6-b0e4-78f637797310", 

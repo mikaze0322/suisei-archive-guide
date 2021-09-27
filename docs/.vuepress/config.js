@@ -14,7 +14,7 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#bb4036' }],
     ['script',{ 
       defer: true, 
-      src: 'https://insight.suisei.cc/js/plausible.js',
+      src: 'https://insight.suisei.cc/js/app.js',
       "data-domain": "guide.suisei.cc",
     }],
   ],

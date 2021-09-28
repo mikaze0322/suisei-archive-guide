@@ -16,13 +16,16 @@ If you found the guide useful, please consider [support the project](https://ko-
 
 ## Changelog
 
+2021/09/29
+
+- Site search is now provided by DocSearch 🎉
+
+::: details Earlier Changelogs
+
 2021/09/15
 
 - Revised and reconstructed with VuePress
 - Add multi language
-
-
-::: details Earlier Changelogs
 
 2021/09/14
 - Re-written and delopyed to Vercel

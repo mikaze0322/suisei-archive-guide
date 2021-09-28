@@ -12,13 +12,13 @@ module.exports = {
     ['meta', { property: 'og:image', content: 'https://guide.suisei.cc/ringo.png' }],
     ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
     ['meta', { name: 'theme-color', content: '#bb4036' }],
-    ['script',{ 
-      async: true, 
-      defer: true, 
-      src: 'https://insight.suisei.cc/umami.js',  
+    ['script', {
+      async: true,
+      defer: true,
+      src: 'https://insight.suisei.cc/umami.js',
       "data-cache": "true",
       "data-domains": "guide.suisei.cc",
-      "data-website-id": "2083a443-de78-42e6-b0e4-78f637797310", 
+      "data-website-id": "2083a443-de78-42e6-b0e4-78f637797310",
     }],
   ],
   markdown: {
@@ -46,12 +46,32 @@ module.exports = {
         },
       },
     ],
+    //[
+    //  '@vuepress/plugin-search',
+    //  {
+    //    locales: {
+    //      '/': {
+    //        placeholder: 'Search',
+    //      },
+    //      '/zh/': {
+    //        placeholder: '搜索',
+    //      },
+    //      '/zh-TW/': {
+    //       placeholder: '搜尋',
+    //      },
+    //    },
+    // 排除首页
+    //    isSearchable: (page) => page.path !== '/',
+    //  },
+    //],
     [
-      '@vuepress/plugin-search',
+      '@vuepress/docsearch',
       {
+        apiKey: '8732d493d581edbc05f7b1bd4075a2b8',
+        indexName: 'suisei',
         locales: {
           '/': {
-            placeholder: 'Search',
+            placeholder: 'Search Documentation',
           },
           '/zh/': {
             placeholder: '搜索',
@@ -60,22 +80,8 @@ module.exports = {
             placeholder: '搜尋',
           },
         },
-        // 排除首页
-        isSearchable: (page) => page.path !== '/',
       },
     ],
-    //[
-    //  '@vuepress/docsearch',
-    //  {
-    //    apiKey: '<API_KEY>',
-    //   indexName: '<INDEX_NAME>',
-    //    locales: {
-    //      '/': {
-    //        placeholder: 'Search Documentation',
-    //      },
-    //    },
-    //  },
-    //],
     [
       '@vuepress/plugin-shiki',
       {

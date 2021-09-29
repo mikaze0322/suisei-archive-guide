@@ -10,7 +10,7 @@ module.exports = {
     ['meta', { property: 'og:site_name', content: 'Suisei Archive Guide' }],
     ['meta', { property: 'og:url', content: 'https://guide.suisei.cc/' }],
     ['meta', { property: 'og:image', content: 'https://guide.suisei.cc/ringo.png' }],
-    ['meta', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
+    ['meta', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
     ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
     ['meta', { name: 'theme-color', content: '#bb4036' }],
     ['script',{ 

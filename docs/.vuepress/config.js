@@ -43,6 +43,10 @@ module.exports = {
             message: '发现新内容可用',
             buttonText: '刷新',
           },
+          '/zh-tw/': {
+            message: '有新內容可用',
+            buttonText: '重新整理',
+          },
         },
       },
     ],
@@ -74,9 +78,9 @@ module.exports = {
             placeholder: 'Search Documentation',
           },
           '/zh/': {
-            placeholder: '搜索',
+            placeholder: '搜索文档',
           },
-          '/zh-TW/': {
+          '/zh-tw/': {
             placeholder: '搜尋',
           },
         },
@@ -107,7 +111,7 @@ module.exports = {
     '/zh-tw/': {
       lang: 'zh-TW',
       title: "Suisei Archive Guide",
-      description: "为星咏者们书写的存档指南。", // 修改为繁中
+      description: "為星詠者提供一份存檔指南僅供參考。", // 修改为繁中
     },
   },
   themeConfig: {

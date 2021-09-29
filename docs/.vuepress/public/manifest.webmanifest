@@ -2,7 +2,7 @@
     "name": "Suisei Archive Guide",
     "short_name": "Suisei Archive Guide",
     "description": "This is a brief archiving guide written for Hoshiyomis to archive every stream of Suisei.",
-    "start_url": "/index.html",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#fff",
     "theme_color": "#bb4036",
@@ -15,7 +15,8 @@
         {
             "src": "/android-chrome-512x512.png",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
         }
     ]
 }

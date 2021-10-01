@@ -112,7 +112,7 @@ module.exports = {
     '/zh-tw/': {
       lang: 'zh-TW',
       title: "Suisei Archive Guide",
-      description: "為星詠者提供一份存檔指南僅供參考。", // 修改为繁中
+      description: "為星詠者提供一份存檔指南供參考。", // 修改为繁中
     },
   },
   themeConfig: {
@@ -144,6 +144,10 @@ module.exports = {
             children: [
               "/storage/rclone/",
             ],
+          },
+          {
+            text: "Credit",
+            link: "/credit/",
           },
         ],
         sidebar: {
@@ -200,6 +204,10 @@ module.exports = {
               "/zh/storage/rclone/",
             ],
           },
+          {
+            text: "制作团队",
+            link: "/zh/credit/",
+          },
         ],
         sidebar: {
           "/zh/": [""],
@@ -254,6 +262,10 @@ module.exports = {
             children: [
               "/zh-tw/storage/rclone/",
             ],
+          },
+          {
+            text: "製作團隊",
+            link: "/zh-tw/credit/",
           },
         ],
         sidebar: {

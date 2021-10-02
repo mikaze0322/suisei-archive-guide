@@ -10,25 +10,15 @@
 
 为星咏者提供一份存档指南供参考。
 
+## 支援
+
+如果本指南有帮助到您，请考虑在 [<i class="fas fa-coffee"></i> Ko-Fi.com](https://ko-fi.com/project_stargazer) 支援本项目。
+
 ## 更新记录
 
-2021/09/19
+2021/09/29
 
-- 增加多语言
-
-::: details Earlier Changelogs
-
-2021/09/15
-- Revised and reconstructed with VuePress
-
-2021/09/14
-- Re-written and delopyed to Vercel
-
-2021/08/18
-- Added `Minyami` for niconico timeshift download
-- Changed the style some badges
-
-:::
+- DocSearch 开始为本项目提供搜索服务 🎉
 
 ## 免责声明
 
@@ -41,11 +31,3 @@
 7. If you need materials to make a clip or introduction of Suisei, please be sure it's positive and won't damage her reputation.
 8. This Guide does not support uploading content available only behind pay-walls. This includes Member-only videos, Paid Lives, Songs, Albums, etc.
 9. The Guide does not and will not deal with issues caused by unexpected content distribution by other parties.
-
-## 制作
-
-站点框架 [VuePress](https://vuepress.vuejs.org/)
-
-部署于 [Vercel](http://vercel.com/)
-
-搜索（即将）提供 [DocSearch](https://docsearch.algolia.com/)

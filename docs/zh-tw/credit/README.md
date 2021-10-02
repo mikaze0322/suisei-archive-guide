@@ -12,7 +12,7 @@ sidebar: false
 
 [ [<i class="fab fa-twitter"></i> Twitter](https://twitter.com/Aozaki__) ] [ [<i class="fas fa-feather-alt"></i> Blog](https://aozaki.cc/) ]
 
-星詠者，網站製作者，英語與簡體中文譯者
+星詠者，網站製作者，英語與簡體中文編撰
 
 如果本指南有幫助到您，請考慮在 [<i class="fas fa-coffee"></i> Ko-Fi.com](https://ko-fi.com/project_stargazer) 支援本項目。
 
@@ -26,7 +26,7 @@ sidebar: false
 
 [ [<i class="fab fa-twitter"></i> Twitter](https://twitter.com/mikaze0322) ] [ [<i class="fab fa-youtube"></i> YouTube](https://www.youtube.com/channel/UCrpkt3YHPdpciDy-96H_2mg) ]
 
-星詠者，翻譯，烤肉Man，繁體中文譯者
+星詠者，翻譯，烤肉Man，繁體中文編撰
 
 ---
 

@@ -8,17 +8,17 @@
 
 ## 本站目的
 
-為星詠者提供一份存檔指南僅供參考。
+為星詠者提供一份存檔指南參考。
 
 ## 支援
 
-如果本指南有帮助到您，请考虑在 [<i class="fas fa-coffee"></i> Ko-Fi.com](https://ko-fi.com/project_stargazer) 支援本项目。
+若本指南有幫助到你，請考慮在 [<i class="fas fa-coffee"></i> Ko-Fi.com](https://ko-fi.com/project_stargazer) 支援本項目。
 
 ## 更新紀錄
 
 2021/09/29
 
-- DocSearch 開始提供檢索服務 🎉
+- DocSearch 開始提供搜尋服務 🎉
 
 ## 免責申明
 
